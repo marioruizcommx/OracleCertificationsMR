@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+
+<title>Backend Ninja - Signin</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<!-- Custom styles for this template -->
+<link href="#" th:href="@{/css/gym.css}" rel="stylesheet" />
+
+</head>
+
+<body>
+
+	<header id="main-header">
+
+		<a id="logo-header" href="#"> <span class="site-name">GYM
+				For Oracle Certifications</span> <span class="site-desc">Programacion
+				Java / Base de datos Oracle / PL SQL</span>
+		</a>
+		<!-- / #logo-header -->
+
+		<nav>
+			<ul>
+				<li><a href="java.html">Java</a></li>
+				<li><a href="plsql.html">PL/SQL</a></li>
+				<li><a href="oracle.html">Oracle DB</a></li>
+			</ul>
+		</nav>
+		<!-- / nav -->
+
+	</header>
+	<!-- / #main-header -->
+
+
+	<section id="main-content">
+
+		<article>
+
+
+			<div class="content">
+				<form action="#" th:action="@{/java}" th:object="${AnswersModel}" method="post">
+					<fieldset>
+
+						<h3 th:text="${question[0]}"></h3>
+			
+						<!-- Título del conjunto de campos -->
+
+						<p>
+							<h4 th:text="${question[1]}"></h4>
+							</br>
+							
+							<div class="custom-control custom-radio custom-control-inline">
+								<input type="radio" name="optionA" value="1" id="optionA"  />
+								<label class="custom-control-label" for="optionA" th:text="${question[2]}">OptionA</label></br> 
+							</div>
+							
+							<div class="custom-control custom-radio custom-control-inline">
+							    <input type="radio" name="optionB" value="1" id="optionB" />
+							    <label class="custom-control-label" for="optionA" th:text="${question[3]}">OptionB</label></br> 
+							</div>
+							
+						    <div class="custom-control custom-radio custom-control-inline">
+							    <input type="radio" name="optionC" value="1" id="optionC" /> 
+							    <label class="custom-control-label" for="optionA" th:text="${question[4]}">OptionC</label></br> 
+							</div>
+							
+						    <div class="custom-control custom-radio custom-control-inline">
+	                            <input type="radio" name="optionD" value="1" id="optionD" /> 
+	                            <label class="custom-control-label" for="optionA" th:text="${question[5]}">OptionD</label></br> 
+							</div>
+
+                            <div th:if="${not #lists.isEmpty(question[6])}">
+							      <input type="radio" name="optionE" value="1" id="optionE"/> 
+							      <label class="custom-control-label" for="optionA" th:text="${question[6]}">OptionE</label></br>
+							</div>
+							<div th:if="${not #lists.isEmpty(question[7])}">
+                                  <input type="radio" name="optionF" value="1" id="optionF"/>
+                                  <label class="custom-control-label" for="optionA" th:text="${question[7]}">OptionF</label></br>
+							</div>
+						</p>
+
+
+						<p>
+							<input type="submit" value="Send Answer">
+						</p>
+					</fieldset>
+				</form>
+			</div>
+
+		</article>
+		<!-- / article -->
+
+	</section>
+	<!-- / #main-content -->
+
+
+	<footer id="main-footer">
+		<p>
+			&copy; 2020 <a href="#">marioruiz.com.mx</a>
+		</p>
+	</footer>
+	<!-- / #main-footer -->
+
+</body>
+</html>
