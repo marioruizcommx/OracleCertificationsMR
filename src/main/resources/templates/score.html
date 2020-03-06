@@ -45,10 +45,25 @@
 			<div class="content">
 					<fieldset>
                         <div>
-						<h1>Score Final</h1><h3 th:text="${review.score}"></h3>
+						<h1>Score Final</h1>
+						
+						
+						
+						<table class="tg">
+						  <tr>
+						    <th class="tg-0pky">You Score:<h3 th:text="${review.score}"></h3> </th>
+						    <th class="tg-0pky"><h3>Number of questions: 77 </h3></th>
+						    <th class="tg-0pky"><h3>Score to pass: 60% </h3></th>
+						  </tr>
+						</table>
+
 						</div>
 
 					</fieldset>
+					
+					    <p>
+							<input type="submit" value="Start Again">
+						</p>
 			
 			</div>
 

@@ -832,7 +832,8 @@ public class JavaServiceImpl implements JavaService {
 	@Override
 	public int calculateScore() {
 		try {
-		return succes / hashMap.size();
+			int scoreFinal =(succes*100) / hashMap.size();
+		    return scoreFinal;
 		}catch (Exception e){
 	    return 1;
 		}
