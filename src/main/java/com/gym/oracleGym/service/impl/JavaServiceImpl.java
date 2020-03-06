@@ -21,6 +21,9 @@ public class JavaServiceImpl implements JavaService {
 
 	ArrayList<Integer> fails = new ArrayList<Integer>();
 	ArrayList<Integer> success = new ArrayList<Integer>();
+	public int fail = 0;
+	public int succes = 1;
+	public int tier=1;
 
 	@Override
 	public ArrayList<String> getQuestion(String questionNumber) {
@@ -30,7 +33,7 @@ public class JavaServiceImpl implements JavaService {
 		ArrayList<String> nombreArrayList1 = new ArrayList<String>();
 		ArrayList<String> nombreArrayList2 = new ArrayList<String>();
 		ArrayList<String> nombreArrayList3 = new ArrayList<String>();
-		ArrayList<String> nombreArrayList8 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList4 = new ArrayList<String>();
 		nombreArrayList1.add("What is the result?");
 		nombreArrayList1.add("Given: What is the result?");
 		nombreArrayList1.add("A.\n" + "400.0 : 200.0");
@@ -38,7 +41,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList1.add("C.\n" + "Compilation fails. ");
 		nombreArrayList1.add("D.\n" + "200.0 : 100.0 ");
 		nombreArrayList1.add("");
-		nombreArrayList1.add("1.jpg");
+		nombreArrayList1.add("");
 		hashMap.put("1", nombreArrayList1);
 		//LOG.info("++++++++++++++++++++++++++++++++++++++++++++++++"+hashMap);
 
@@ -49,7 +52,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList2.add("C.\n" + "Hello World! ");
 		nombreArrayList2.add("D.\n" + "Compilation fails. ");
 		nombreArrayList2.add("");
-		nombreArrayList2.add("1.jpg");
+		nombreArrayList2.add("");
 		hashMap.put("2", nombreArrayList2);
 
 		/*nombreArrayList3.add("What is the result?");
@@ -68,8 +71,19 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList3.add("C.\n" + "2014-05-04T00:00: 00. 000 ");
 		nombreArrayList3.add("D.\n" + "5/4/14T00:00:00.000 ");
 		nombreArrayList3.add("");
-		nombreArrayList3.add("1.jpg");
+		nombreArrayList3.add("");
 		hashMap.put("3", nombreArrayList3);
+		nombreArrayList4.add("");
+		nombreArrayList4.add("");
+		nombreArrayList4.add("");
+		nombreArrayList4.add("");
+		nombreArrayList4.add("");
+		nombreArrayList4.add("");
+		nombreArrayList4.add("");
+		nombreArrayList4.add("");
+		hashMap.put("4", nombreArrayList4);
+		
+		
 		//LOG.info("++++++++++++++++++++++++++++++++++++++++++++++++"+hashMap.get("3"));
 		/*nombreArrayList.clear();
 		nombreArrayList.add("What is the result?");
@@ -111,7 +125,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList.add("E.\n" + "4W 100 Auto 4W 150 Manual ");
 		hashMap.put("7", nombreArrayList);
 		nombreArrayList.clear();*/
-		nombreArrayList8.add("Which two modifications should you make so that the code compiles successfully?");
+		/*nombreArrayList8.add("Which two modifications should you make so that the code compiles successfully?");
 		nombreArrayList8.add("Given the code fragment: Which two modifications should you make so that the code\n"
 				+ "compiles successfully?");
 		nombreArrayList8.add("A.\n" + "Option B");
@@ -804,25 +818,24 @@ public class JavaServiceImpl implements JavaService {
 
 	@Override
 	public void setFails(int questionNumber) {
-		JavaModel question = new JavaModel();
-		question.setFails(question.getFails() + 1);
+		fail=fail+1;
 
 		fails.add(questionNumber);
 	}
 
 	@Override
 	public void setSuccess(int questionNumber) {
-		JavaModel question = new JavaModel();
-		question.setSuccess(question.getSuccess() + 1);
+		succes=succes+1;
 		success.add(questionNumber);
 	}
 
 	@Override
-	public int calculateScore(int score) {
-		int finalScore;
-		JavaModel question = new JavaModel();
-		question.setScore(question.getSuccess() / hashMap.size());
-		return question.getScore();
+	public int calculateScore() {
+		try {
+		return succes / hashMap.size();
+		}catch (Exception e){
+	    return 1;
+		}
 	}
 
 	@Override
@@ -851,8 +864,9 @@ public class JavaServiceImpl implements JavaService {
 
 			return 1;
 		}*/
+		String imagen = img.getImgNumber();
 		
-		return img.getImgNumber();
+		return imagen;
 	}
 
 	@Override
@@ -1141,8 +1155,10 @@ public class JavaServiceImpl implements JavaService {
 		if(totalAnswers == 1) {
 			
 			if (answersUser.get(questionNumber)==answer.get(questionNumber)) {
+				setSuccess(getSuccess()+1);
 				return true;
 			}else {
+				setFails(getFails()+1);
 				return false;
 			}
 			
@@ -1151,8 +1167,10 @@ public class JavaServiceImpl implements JavaService {
 			Collections.sort(answersUser);
 		    Collections.sort(answer);
 		    if(answersUser.equals(answer)) {
+		    	setSuccess(getSuccess()+1);
 		    	return true;
 		    }else {
+		    	setFails(getFails()+1);
 		    	return false;
 		    }
 			
@@ -1171,21 +1189,20 @@ public class JavaServiceImpl implements JavaService {
 
 	@Override
 	public int getFails() {
-		// TODO Auto-generated method stub
-		return 0;
+		JavaModel jvm = new JavaModel();
+		return jvm.getFails();
 	}
 
 	@Override
 	public int getSuccess() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return succes;
 	}
 
 	@Override
 	public int getQuestionNow() {
-		JavaModel jm = new JavaModel();
-		
-		return jm.getQuetionNow();
+
+		return fail;
 	}
 
 	@Override
@@ -1194,6 +1211,17 @@ public class JavaServiceImpl implements JavaService {
 		String image =imgNumber + ".jpg";
 		img.setImgNumber(image);
 
+	}
+
+	@Override
+	public int getTier() {
+		return tier;
+	}
+
+	@Override
+	public void setTier(int tier) {
+		this.tier=tier+1;
+		
 	}
 
 }

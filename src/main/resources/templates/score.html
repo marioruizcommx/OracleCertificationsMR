@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+
+<title>Backend Ninja - Signin</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<!-- Custom styles for this template -->
+<link href="#" th:href="@{/css/gym.css}" rel="stylesheet" />
+
+</head>
+
+<body>
+
+	<header id="main-header">
+
+		<a id="logo-header" href="#"> <span class="site-name">GYM
+				For Oracle Certifications</span> <span class="site-desc">Programacion
+				Java / Base de datos Oracle / PL SQL</span>
+		</a>
+		<!-- / #logo-header -->
+
+		<nav>
+			<ul>
+				<li><a href="java.html">Java</a></li>
+				<li><a href="plsql.html">PL/SQL</a></li>
+				<li><a href="oracle.html">Oracle DB</a></li>
+			</ul>
+		</nav>
+		<!-- / nav -->
+
+	</header>
+	<!-- / #main-header -->
+
+
+	<section id="main-content">
+
+		<article>
+
+
+			<div class="content">
+					<fieldset>
+                        <div>
+						<h1>Score Final</h1><h3 th:text="${review.score}"></h3>
+						</div>
+
+					</fieldset>
+			
+			</div>
+
+		</article>
+		<!-- / article -->
+
+	</section>
+	<!-- / #main-content -->
+
+
+	<footer id="main-footer">
+		<p>
+			&copy; 2020 <a href="#">marioruiz.com.mx</a>
+		</p>
+	</footer>
+	<!-- / #main-footer -->
+
+</body>
+</html>

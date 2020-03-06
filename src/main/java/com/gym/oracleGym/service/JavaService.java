@@ -21,7 +21,7 @@ public interface JavaService {
 	
 	public int getQuestionNow();
 	
-	public int calculateScore(int score);
+	public int calculateScore();
 	
 	public String getImage(String imagenNumber);
 	
@@ -32,6 +32,10 @@ public interface JavaService {
 	public boolean verifyAnswer(int numQue, ArrayList<String> answersUser);
 	
 	public void setImage(String imgNumber);
+	
+	public int getTier();
+	
+	public void setTier(int tier);
 	
 	
 

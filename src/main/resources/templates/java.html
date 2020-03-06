@@ -45,34 +45,36 @@
 			<div class="content">
 				<form action="#" th:action="@{/java}" th:object="${AnswersModel}" method="post">
 					<fieldset>
-
+                        <div class="custom-control custom-radio custom-control-inline" th:if="${not #lists.isEmpty(question[0])}">
 						<h3 th:text="${question[0]}"></h3>
-			
-						<!-- Título del conjunto de campos -->
+						</div>
 
-						<p>
+						<p> 
+						    <div class="custom-control custom-radio custom-control-inline" th:if="${not #lists.isEmpty(question[1])}">
 							<h4 th:text="${question[1]}"></h4>
+							</div>
 							</br>
+
+							<div class="custom-control custom-radio custom-control-inline" th:if="${not #lists.isEmpty(question[1])}">
+							<img th:src="@{/imgs/java/808/{image}(image=${review.imagen})}">
+							</div>
 							
-							<!--<img th:src="@{/imgs/java/808/1.jpg}"/>-->
-							<img th:src="@{/images/{image}(image=${review})}">
-							
-							<div class="custom-control custom-radio custom-control-inline">
+							<div class="custom-control custom-radio custom-control-inline" th:if="${not #lists.isEmpty(question[2])}">
 								<input type="radio" name="optionA" value="1" id="optionA"  />
 								<label class="custom-control-label" for="optionA" th:text="${question[2]}">OptionA</label></br> 
 							</div>
 							
-							<div class="custom-control custom-radio custom-control-inline">
+							<div class="custom-control custom-radio custom-control-inline" th:if="${not #lists.isEmpty(question[3])}">
 							    <input type="radio" name="optionB" value="1" id="optionB" />
 							    <label class="custom-control-label" for="optionA" th:text="${question[3]}">OptionB</label></br> 
 							</div>
 							
-						    <div class="custom-control custom-radio custom-control-inline">
+						    <div class="custom-control custom-radio custom-control-inline" th:if="${not #lists.isEmpty(question[4])}">
 							    <input type="radio" name="optionC" value="1" id="optionC" /> 
 							    <label class="custom-control-label" for="optionA" th:text="${question[4]}">OptionC</label></br> 
 							</div>
 							
-						    <div class="custom-control custom-radio custom-control-inline">
+						    <div class="custom-control custom-radio custom-control-inline" th:if="${not #lists.isEmpty(question[5])}">
 	                            <input type="radio" name="optionD" value="1" id="optionD" /> 
 	                            <label class="custom-control-label" for="optionA" th:text="${question[5]}">OptionD</label></br> 
 							</div>
