@@ -9,6 +9,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Service;
 
 import com.gym.oracleGym.controller.JavaController;
+import com.gym.oracleGym.model.ImgModel;
 import com.gym.oracleGym.model.JavaModel;
 import com.gym.oracleGym.service.JavaService;
 
@@ -29,6 +30,7 @@ public class JavaServiceImpl implements JavaService {
 		ArrayList<String> nombreArrayList1 = new ArrayList<String>();
 		ArrayList<String> nombreArrayList2 = new ArrayList<String>();
 		ArrayList<String> nombreArrayList3 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList8 = new ArrayList<String>();
 		nombreArrayList1.add("What is the result?");
 		nombreArrayList1.add("Given: What is the result?");
 		nombreArrayList1.add("A.\n" + "400.0 : 200.0");
@@ -36,7 +38,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList1.add("C.\n" + "Compilation fails. ");
 		nombreArrayList1.add("D.\n" + "200.0 : 100.0 ");
 		nombreArrayList1.add("");
-		nombreArrayList1.add("");
+		nombreArrayList1.add("1.jpg");
 		hashMap.put("1", nombreArrayList1);
 		//LOG.info("++++++++++++++++++++++++++++++++++++++++++++++++"+hashMap);
 
@@ -47,7 +49,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList2.add("C.\n" + "Hello World! ");
 		nombreArrayList2.add("D.\n" + "Compilation fails. ");
 		nombreArrayList2.add("");
-		nombreArrayList2.add("");
+		nombreArrayList2.add("1.jpg");
 		hashMap.put("2", nombreArrayList2);
 
 		/*nombreArrayList3.add("What is the result?");
@@ -66,7 +68,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList3.add("C.\n" + "2014-05-04T00:00: 00. 000 ");
 		nombreArrayList3.add("D.\n" + "5/4/14T00:00:00.000 ");
 		nombreArrayList3.add("");
-		nombreArrayList3.add("");
+		nombreArrayList3.add("1.jpg");
 		hashMap.put("3", nombreArrayList3);
 		//LOG.info("++++++++++++++++++++++++++++++++++++++++++++++++"+hashMap.get("3"));
 		/*nombreArrayList.clear();
@@ -108,17 +110,19 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList.add("D.\n" + "Null 0 Auto 4W 150 Manual");
 		nombreArrayList.add("E.\n" + "4W 100 Auto 4W 150 Manual ");
 		hashMap.put("7", nombreArrayList);
-		nombreArrayList.clear();
-		nombreArrayList.add("Which two modifications should you make so that the code compiles successfully?");
-		nombreArrayList.add("Given the code fragment: Which two modifications should you make so that the code\n"
+		nombreArrayList.clear();*/
+		nombreArrayList8.add("Which two modifications should you make so that the code compiles successfully?");
+		nombreArrayList8.add("Given the code fragment: Which two modifications should you make so that the code\n"
 				+ "compiles successfully?");
-		nombreArrayList.add("A.\n" + "Option B");
-		nombreArrayList.add("B.\n" + "Option C ");
-		nombreArrayList.add("C.\n" + "Option D ");
-		nombreArrayList.add("D.\n" + "Option E ");
-		nombreArrayList.add("D.\n" + "Option A ");
-		hashMap.put("8", nombreArrayList);
-		nombreArrayList.clear();
+		nombreArrayList8.add("A.\n" + "Option B");
+		nombreArrayList8.add("B.\n" + "Option C ");
+		nombreArrayList8.add("C.\n" + "Option D ");
+		nombreArrayList8.add("D.\n" + "Option E ");
+		nombreArrayList8.add("D.\n" + "Option A ");
+		nombreArrayList8.add("");
+		nombreArrayList8.add("1.jpg");
+		hashMap.put("8", nombreArrayList8);
+		nombreArrayList.clear();/*
 		nombreArrayList.add(
 				"How should you write methods in the ElectricAccount class at line n1 so that the member variable bill…?");
 		nombreArrayList
@@ -822,11 +826,13 @@ public class JavaServiceImpl implements JavaService {
 	}
 
 	@Override
-	public int getImage(int imagenNumber) {
+	public String getImage(String imagenNumber) {
 		ArrayList<Integer> nombreArrayList = new ArrayList<Integer>();
 		boolean existImage;
+		
+		ImgModel img = new ImgModel();
 
-		nombreArrayList.add(5);
+		/*nombreArrayList.add(5);
 		nombreArrayList.add(31);
 		nombreArrayList.add(40);
 		nombreArrayList.add(43);
@@ -844,7 +850,9 @@ public class JavaServiceImpl implements JavaService {
 		} else {
 
 			return 1;
-		}
+		}*/
+		
+		return img.getImgNumber();
 	}
 
 	@Override
@@ -872,10 +880,10 @@ public class JavaServiceImpl implements JavaService {
 		answer1.add("1");
 		answer1.add("A");
 		answers.put(1, answer1);
-		answer2.add("1");
+		answer2.add("2");
 		answer2.add("A");
 		answers.put(2, answer2);
-		answer3.add("1");
+		answer3.add("3");
 		answer3.add("A");
 		answers.put(3, answer3);
 
@@ -1132,7 +1140,7 @@ public class JavaServiceImpl implements JavaService {
 		
 		if(totalAnswers == 1) {
 			
-			if (answersUser.get(1)==answer.get(1)) {
+			if (answersUser.get(questionNumber)==answer.get(questionNumber)) {
 				return true;
 			}else {
 				return false;
@@ -1178,6 +1186,14 @@ public class JavaServiceImpl implements JavaService {
 		JavaModel jm = new JavaModel();
 		
 		return jm.getQuetionNow();
+	}
+
+	@Override
+	public void setImage(String imgNumber) {
+		ImgModel img = new ImgModel();
+		String image =imgNumber + ".jpg";
+		img.setImgNumber(image);
+
 	}
 
 }

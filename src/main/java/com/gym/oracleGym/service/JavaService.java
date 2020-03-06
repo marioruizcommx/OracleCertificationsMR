@@ -23,13 +23,15 @@ public interface JavaService {
 	
 	public int calculateScore(int score);
 	
-	public int getImage(int imagenNumber);
+	public String getImage(String imagenNumber);
 	
 	public ArrayList<Integer> failQuestionList();
 	
 	public ArrayList<Integer> successQuestionList();
 	
 	public boolean verifyAnswer(int numQue, ArrayList<String> answersUser);
+	
+	public void setImage(String imgNumber);
 	
 	
 

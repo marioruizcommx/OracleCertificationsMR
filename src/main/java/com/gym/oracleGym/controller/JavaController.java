@@ -58,6 +58,7 @@ public String numQue;
 		numQue = String.valueOf(numbers.get(randomIndex));
 		ModelAndView mav = new ModelAndView(ViewConstant.JAVA_FORM);
 		javaService.setQuestionNow(Integer.valueOf(numQue));
+		mav.addObject("review", javaService.getImage(numQue));
 		mav.addObject("question", javaService.getQuestion(numQue));
 		numbers.remove(randomIndex);
 		return mav;

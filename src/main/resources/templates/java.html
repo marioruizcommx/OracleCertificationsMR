@@ -54,6 +54,9 @@
 							<h4 th:text="${question[1]}"></h4>
 							</br>
 							
+							<!--<img th:src="@{/imgs/java/808/1.jpg}"/>-->
+							<img th:src="@{/images/{image}(image=${review})}">
+							
 							<div class="custom-control custom-radio custom-control-inline">
 								<input type="radio" name="optionA" value="1" id="optionA"  />
 								<label class="custom-control-label" for="optionA" th:text="${question[2]}">OptionA</label></br> 
