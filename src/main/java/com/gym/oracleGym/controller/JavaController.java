@@ -90,7 +90,7 @@ public class JavaController {
 		System.out.println("respuestas buenas:" + javaService.getSuccess());
 		System.out.println("respuestas malas:" + javaService.getFails());
 		
-		if(numQue.equals("3") ) {
+		if(numQue.equals("4") ) {
 			
 	        return "redirect:/score";
 		}

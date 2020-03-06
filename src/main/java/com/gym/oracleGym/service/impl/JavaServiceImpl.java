@@ -34,6 +34,79 @@ public class JavaServiceImpl implements JavaService {
 		ArrayList<String> nombreArrayList2 = new ArrayList<String>();
 		ArrayList<String> nombreArrayList3 = new ArrayList<String>();
 		ArrayList<String> nombreArrayList4 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList5 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList6 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList7 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList8 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList9 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList10 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList11 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList12 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList13 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList14 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList15 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList16 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList17 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList18 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList19 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList20 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList21 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList22 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList23 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList24 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList25 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList26 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList27 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList28 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList29 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList30 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList31 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList32 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList33 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList34 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList35 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList36 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList37 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList38 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList39 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList40 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList41 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList42 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList43 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList44 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList45 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList46 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList47 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList48 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList50 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList51 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList52 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList53 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList54 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList55 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList56 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList57 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList58 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList59 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList60 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList61 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList62 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList63 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList64 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList65 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList66 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList67 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList68 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList69 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList70 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList71 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList72 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList73 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList74 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList75 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList76 = new ArrayList<String>();
+		ArrayList<String> nombreArrayList77 = new ArrayList<String>();
+		
 		nombreArrayList1.add("What is the result?");
 		nombreArrayList1.add("Given: What is the result?");
 		nombreArrayList1.add("A.\n" + "400.0 : 200.0");
@@ -54,15 +127,6 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList2.add("");
 		nombreArrayList2.add("");
 		hashMap.put("2", nombreArrayList2);
-
-		/*nombreArrayList3.add("What is the result?");
-		nombreArrayList3.add("Given the code fragment: What is the result?");
-		nombreArrayList3.add("A.\n" + "May 04, 2014T00:00:00.000");
-		nombreArrayList3.add("B.\n" + "An exception is thrown at runtime. ");
-		nombreArrayList3.add("C.\n" + "2014-05-04T00:00: 00. 000 ");
-		nombreArrayList3.add("D.\n" + "5/4/14T00:00:00.000 ");
-		nombreArrayList1.add("0");
-		nombreArrayList1.add("0");*/
 		
 		nombreArrayList3.add("What is the result?");
 		nombreArrayList3.add("Given the code fragment: What is the result?");
@@ -73,49 +137,39 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList3.add("");
 		nombreArrayList3.add("");
 		hashMap.put("3", nombreArrayList3);
-		nombreArrayList4.add("");
-		nombreArrayList4.add("");
-		nombreArrayList4.add("");
-		nombreArrayList4.add("");
-		nombreArrayList4.add("");
-		nombreArrayList4.add("");
-		nombreArrayList4.add("");
+		
+		
+		nombreArrayList4.add("What is the result?");
+		nombreArrayList4.add("Given the code fragment: What is the result?");
+		nombreArrayList4.add("A.\n" + "Sum is 600");
+		nombreArrayList4.add("B.\n" + "Compilation fails at line n1. ");
+		nombreArrayList4.add("C.\n" + "Compilation fails at line n2.");
+		nombreArrayList4.add("D.\n" + "A ClassCastException is thrown at line n1.");
+		nombreArrayList4.add("E.\n" + "A ClassCastException is thrown at line n2.");
 		nombreArrayList4.add("");
 		hashMap.put("4", nombreArrayList4);
 		
-		
-		//LOG.info("++++++++++++++++++++++++++++++++++++++++++++++++"+hashMap.get("3"));
-		/*nombreArrayList.clear();
-		nombreArrayList.add("What is the result?");
-		nombreArrayList.add("Given the code fragment: What is the result?");
-		nombreArrayList.add("A.\n" + "Sum is 600");
-		nombreArrayList.add("B.\n" + "Compilation fails at line n1. ");
-		nombreArrayList.add("C.\n" + "Compilation fails at line n2.");
-		nombreArrayList.add("D.\n" + "A ClassCastException is thrown at line n1.");
-		nombreArrayList.add("E.\n" + "A ClassCastException is thrown at line n2.");
-		hashMap.put("4", nombreArrayList);
-		nombreArrayList.clear();
-		nombreArrayList.add(
-				"What is the name of the Java concept that uses access modifiers to protect variables and hide them within a cl");
-		nombreArrayList.add("What is the name of the Java concept that uses access modifiers to protect variables and\n"
+		nombreArrayList5.add("What is the name of the Java concept that uses access modifiers to protect variables and hide them within a cl");
+		nombreArrayList5.add("What is the name of the Java concept that uses access modifiers to protect variables and\n"
 				+ "hide them within a class?");
-		nombreArrayList.add("A.\n" + "Polymorphism");
-		nombreArrayList.add("B.\n" + "Instantiation");
-		nombreArrayList.add("C.\n" + "Encapsulation");
-		nombreArrayList.add("D.\n" + "Inheritance");
-		nombreArrayList.add("E.\n" + "Abstraction");
-		hashMap.put("5", nombreArrayList);
-		nombreArrayList.clear();
-		nombreArrayList.add("Which two modifications, made independently, enable the code to compile?");
-		nombreArrayList.add("Given the code fragment: Which two modifications, made independently, enable the code to\n"
+		nombreArrayList5.add("A.\n" + "Polymorphism");
+		nombreArrayList5.add("B.\n" + "Instantiation");
+		nombreArrayList5.add("C.\n" + "Encapsulation");
+		nombreArrayList5.add("D.\n" + "Inheritance");
+		nombreArrayList5.add("E.\n" + "Abstraction");
+		hashMap.put("5", nombreArrayList5);
+		
+		
+		nombreArrayList6.add("Which two modifications, made independently, enable the code to compile?");
+		nombreArrayList6.add("Given the code fragment: Which two modifications, made independently, enable the code to\n"
 				+ "compile?");
-		nombreArrayList.add("A.\n" + "Make the method at line n1 public.");
-		nombreArrayList.add("B.\n" + "Make the method at line n2 public. ");
-		nombreArrayList.add("C.\n" + "Make the method at line n3 public. ");
-		nombreArrayList.add("D.\n" + "Make the method at line n3 protected. ");
-		nombreArrayList.add("E.\n" + "Make the method at line n4 public. ");
-		hashMap.put("6", nombreArrayList);
-		nombreArrayList.clear();
+		nombreArrayList6.add("A.\n" + "Make the method at line n1 public.");
+		nombreArrayList6.add("B.\n" + "Make the method at line n2 public. ");
+		nombreArrayList6.add("C.\n" + "Make the method at line n3 public. ");
+		nombreArrayList6.add("D.\n" + "Make the method at line n3 protected. ");
+		nombreArrayList6.add("E.\n" + "Make the method at line n4 public. ");
+		hashMap.put("6", nombreArrayList6);
+		
 		nombreArrayList.add("What is the result?");
 		nombreArrayList.add("Given: And given the code fragment: What is the result?");
 		nombreArrayList.add("A.\n" + "Compilation fails only at line n2");
@@ -124,8 +178,8 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList.add("D.\n" + "Null 0 Auto 4W 150 Manual");
 		nombreArrayList.add("E.\n" + "4W 100 Auto 4W 150 Manual ");
 		hashMap.put("7", nombreArrayList);
-		nombreArrayList.clear();*/
-		/*nombreArrayList8.add("Which two modifications should you make so that the code compiles successfully?");
+
+		nombreArrayList8.add("Which two modifications should you make so that the code compiles successfully?");
 		nombreArrayList8.add("Given the code fragment: Which two modifications should you make so that the code\n"
 				+ "compiles successfully?");
 		nombreArrayList8.add("A.\n" + "Option B");
@@ -136,129 +190,132 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList8.add("");
 		nombreArrayList8.add("1.jpg");
 		hashMap.put("8", nombreArrayList8);
-		nombreArrayList.clear();/*
-		nombreArrayList.add(
-				"How should you write methods in the ElectricAccount class at line n1 so that the member variable bill…?");
-		nombreArrayList
-				.add("Given the following two classes: How should you write methods in the ElectricAccount class\n"
+
+		nombreArrayList9.add("How should you write methods in the ElectricAccount class at line n1 so that the member variable bill…?");
+		nombreArrayList9.add("Given the following two classes: How should you write methods in the ElectricAccount class\n"
 						+ "at line n1 so that the member variable bill is always equal to the value of the member\n"
 						+ "variable kwh multiplied by the member variable rate? Any amount of electricity used by a\n"
 						+ "customer (represented by an instance of the customer class) must contribute to the\n"
 						+ "customer’s bill (represented by the member variable bill) through the method useElectricity\n"
 						+ "method. An instance of the customer class should never be able to tamper with or decrease\n"
 						+ "the value of the member variable bill.");
-		nombreArrayList.add("A.\n" + "Option A");
-		nombreArrayList.add("B.\n" + "Option B ");
-		nombreArrayList.add("C.\n" + "Option C ");
-		nombreArrayList.add("D.\n" + "Option D ");
-		hashMap.put("9", nombreArrayList);
-		nombreArrayList.clear();
-		nombreArrayList.add("What is the result?");
-		nombreArrayList.add("Given the code fragment: What is the result?");
-		nombreArrayList.add("A.\n" + "A NullPointerException is thrown at runtime.");
-		nombreArrayList.add("B.\n" + "No Match ");
-		nombreArrayList.add("C.\n" + "Match 2 ");
-		nombreArrayList.add("D.\n" + "Match 1 ");
-		hashMap.put("10", nombreArrayList);
-		nombreArrayList.clear();
-		nombreArrayList.add("Which option enables the code to compile?");
-		nombreArrayList.add("Given: Which option enables the code to compile?");
-		nombreArrayList.add("A.\n" + "Option B");
-		nombreArrayList.add("B.\n" + "Option C ");
-		nombreArrayList.add("C.\n" + "Option D ");
-		nombreArrayList.add("D.\n" + "Option A ");
-		hashMap.put("11", nombreArrayList);
-		nombreArrayList.clear();
-		nombreArrayList.add("What is the result?");
-		nombreArrayList.add("Given: What is the result?");
-		nombreArrayList.add("A.\n" + "A B C D");
-		nombreArrayList.add("B.\n" + "A C D ");
-		nombreArrayList.add("C.\n" + "A B C C ");
-		nombreArrayList.add("D.\n" + "A B D ");
-		nombreArrayList.add("E.\n" + "A B D C ");
-		hashMap.put("12", nombreArrayList);
-		nombreArrayList.clear();
-		nombreArrayList
-				.add("Which code fragment should you use at line n1 to instantiate the dvd object successfully?");
-		nombreArrayList.add("Given: Which code fragment should you use at line n1 to instantiate the dvd object\n"
+		nombreArrayList9.add("A.\n" + "Option A");
+		nombreArrayList9.add("B.\n" + "Option B ");
+		nombreArrayList9.add("C.\n" + "Option C ");
+		nombreArrayList9.add("D.\n" + "Option D ");
+		hashMap.put("9", nombreArrayList9);
+		
+		nombreArrayList10.add("What is the result?");
+		nombreArrayList10.add("Given the code fragment: What is the result?");
+		nombreArrayList10.add("A.\n" + "A NullPointerException is thrown at runtime.");
+		nombreArrayList10.add("B.\n" + "No Match ");
+		nombreArrayList10.add("C.\n" + "Match 2 ");
+		nombreArrayList10.add("D.\n" + "Match 1 ");
+		hashMap.put("10", nombreArrayList10);
+		
+		
+		nombreArrayList11.add("Which option enables the code to compile?");
+		nombreArrayList11.add("Given: Which option enables the code to compile?");
+		nombreArrayList11.add("A.\n" + "Option B");
+		nombreArrayList11.add("B.\n" + "Option C ");
+		nombreArrayList11.add("C.\n" + "Option D ");
+		nombreArrayList11.add("D.\n" + "Option A ");
+		hashMap.put("11", nombreArrayList11);
+		
+		
+		nombreArrayList12.add("What is the result?");
+		nombreArrayList12.add("Given: What is the result?");
+		nombreArrayList12.add("A.\n" + "A B C D");
+		nombreArrayList12.add("B.\n" + "A C D ");
+		nombreArrayList12.add("C.\n" + "A B C C ");
+		nombreArrayList12.add("D.\n" + "A B D ");
+		nombreArrayList12.add("E.\n" + "A B D C ");
+		hashMap.put("12", nombreArrayList12);
+		
+		
+		nombreArrayList13.add("Which code fragment should you use at line n1 to instantiate the dvd object successfully?");
+		nombreArrayList13.add("Given: Which code fragment should you use at line n1 to instantiate the dvd object\n"
 				+ "successfully?");
-		nombreArrayList.add("A.\n" + "Option A");
-		nombreArrayList.add("B.\n" + "Option D ");
-		nombreArrayList.add("C.\n" + "Option B ");
-		nombreArrayList.add("D.\n" + "Option C ");
-		hashMap.put("13", nombreArrayList);
-		nombreArrayList.clear();
-		nombreArrayList.add("Which option can replace xxx to enable the code to print 135?");
-		nombreArrayList.add("Given the code fragment: Which option can replace xxx to enable the code to print 135?");
-		nombreArrayList.add("A.\n" + "int e = 0; e < = 4; e++");
-		nombreArrayList.add("B.\n" + "int e = 0; e < 5; e + = 2 ");
-		nombreArrayList.add("C.\n" + "int e = 1; e < = 5; e + = 1 ");
-		nombreArrayList.add("D.\n" + "int e = 1; e < 5; e+ =2 ");
-		hashMap.put("14", nombreArrayList);
-		nombreArrayList.clear();
-		nombreArrayList.add("Which statement best describes encapsulation?");
-		nombreArrayList.add("Which statement best describes encapsulation?");
-		nombreArrayList.add("A.\n" + "Encapsulation ensures that classes can be designed so that if a method has an\n"
+		nombreArrayList13.add("A.\n" + "Option A");
+		nombreArrayList13.add("B.\n" + "Option D ");
+		nombreArrayList13.add("C.\n" + "Option B ");
+		nombreArrayList13.add("D.\n" + "Option C ");
+		hashMap.put("13", nombreArrayList13);
+		
+		
+		nombreArrayList14.add("Which option can replace xxx to enable the code to print 135?");
+		nombreArrayList14.add("Given the code fragment: Which option can replace xxx to enable the code to print 135?");
+		nombreArrayList14.add("A.\n" + "int e = 0; e < = 4; e++");
+		nombreArrayList14.add("B.\n" + "int e = 0; e < 5; e + = 2 ");
+		nombreArrayList14.add("C.\n" + "int e = 1; e < = 5; e + = 1 ");
+		nombreArrayList14.add("D.\n" + "int e = 1; e < 5; e+ =2 ");
+		hashMap.put("14", nombreArrayList14);
+		
+		nombreArrayList15.add("Which statement best describes encapsulation?");
+		nombreArrayList15.add("Which statement best describes encapsulation?");
+		nombreArrayList15.add("A.\n" + "Encapsulation ensures that classes can be designed so that if a method has an\n"
 				+ "argument MyType x, any subclass of MyType can be passed to that method.");
-		nombreArrayList
-				.add("B.\n" + "Encapsulation ensures that classes can be designed so that only certain fields and\n"
+		nombreArrayList15.add("B.\n" + "Encapsulation ensures that classes can be designed so that only certain fields and\n"
 						+ "methods of an object are accessible from other objects. ");
-		nombreArrayList.add("C.\n" + "Encapsulation ensures that classes can be designed so that their methods are\n"
+		nombreArrayList15.add("C.\n" + "Encapsulation ensures that classes can be designed so that their methods are\n"
 				+ "inheritable. ");
-		nombreArrayList.add("D.\n" + "Encapsulation ensures that classes can be designed with some fields and methods\n"
+		nombreArrayList15.add("D.\n" + "Encapsulation ensures that classes can be designed with some fields and methods\n"
 				+ "declared as abstract. ");
-		hashMap.put("15", nombreArrayList);
-		nombreArrayList.clear();
-		nombreArrayList.add("Which code fragment, when inserted at line 2, enables the code to compile?");
+		hashMap.put("15", nombreArrayList15);
+		
+		
+		nombreArrayList16.add("Which code fragment, when inserted at line 2, enables the code to compile?");
 		nombreArrayList.add("Given the code fragment from three files: Which code fragment, when inserted at line 2,\n"
 				+ "enables the code to compile?");
-		nombreArrayList.add("A.\n" + "Option E");
-		nombreArrayList.add("B.\n" + "Option D ");
-		nombreArrayList.add("C.\n" + "Option A ");
-		nombreArrayList.add("D.\n" + "Option C ");
-		nombreArrayList.add("D.\n" + "Option B ");
-		hashMap.put("16", nombreArrayList);
-		nombreArrayList.clear();
-		nombreArrayList.add(
-				"Which three lines, when inserted independently at line n1, cause the program to print a o balance?");
-		nombreArrayList
-				.add("Given the following class: And given the following main method, located in another class:\n"
+		nombreArrayList16.add("A.\n" + "Option E");
+		nombreArrayList16.add("B.\n" + "Option D ");
+		nombreArrayList16.add("C.\n" + "Option A ");
+		nombreArrayList16.add("D.\n" + "Option C ");
+		nombreArrayList16.add("D.\n" + "Option B ");
+		hashMap.put("16", nombreArrayList16);
+		
+		
+		nombreArrayList17.add("Which three lines, when inserted independently at line n1, cause the program to print a o balance?");
+		nombreArrayList17.add("Given the following class: And given the following main method, located in another class:\n"
 						+ "Which three lines, when inserted independently at line n1, cause the program to print a o\n"
 						+ "balance?");
-		nombreArrayList.add("A.\n" + "acct.changeAmount(-acct.amount);");
-		nombreArrayList.add("B.\n" + "this.amount = 0; ");
-		nombreArrayList.add("C.\n" + "amount = 0; ");
-		nombreArrayList.add("D.\n" + "acct (0) ; ");
-		nombreArrayList.add("E.\n" + "acct.amount = 0; ");
-		nombreArrayList.add("F.\n" + "acct. getAmount () = 0; ");
-		nombreArrayList.add("G.\n" + "acct.changeAmount(0); ");
-		hashMap.put("17", nombreArrayList);
-		nombreArrayList.clear();
-		nombreArrayList.add("Which code fragment prints red: blue: small: medium?");
-		nombreArrayList.add("Given the code fragment: Which code fragment prints red: blue: small: medium?");
-		nombreArrayList.add("A.\n" + "Option D");
-		nombreArrayList.add("B.\n" + "Option C ");
-		nombreArrayList.add("C.\n" + "Option A ");
-		nombreArrayList.add("D.\n" + "Option B ");
-		hashMap.put("18", nombreArrayList);
-		nombreArrayList.clear();
-		nombreArrayList.add("What is the result?");
-		nombreArrayList.add("Given the code fragment: What is the result?");
-		nombreArrayList.add("A.\n" + "Compilation fails at both line n2 and line n3.");
-		nombreArrayList.add("B.\n" + "Reading Card Checking Card ");
-		nombreArrayList.add("C.\n" + "Compilation fails only at line n1. ");
-		nombreArrayList.add("D.\n" + "Compilation fails only at line n2. ");
-		nombreArrayList.add("D.\n" + "Compilation fails only at line n3. ");
-		hashMap.put("19", nombreArrayList);
-		nombreArrayList.clear();
-		nombreArrayList.add("Which modification enables the code to print 54321?");
+		nombreArrayList17.add("A.\n" + "acct.changeAmount(-acct.amount);");
+		nombreArrayList17.add("B.\n" + "this.amount = 0; ");
+		nombreArrayList17.add("C.\n" + "amount = 0; ");
+		nombreArrayList17.add("D.\n" + "acct (0) ; ");
+		nombreArrayList17.add("E.\n" + "acct.amount = 0; ");
+		nombreArrayList17.add("F.\n" + "acct. getAmount () = 0; ");
+		nombreArrayList17.add("G.\n" + "acct.changeAmount(0); ");
+		hashMap.put("17", nombreArrayList17);
+		
+		
+		nombreArrayList18.add("Which code fragment prints red: blue: small: medium?");
+		nombreArrayList18.add("Given the code fragment: Which code fragment prints red: blue: small: medium?");
+		nombreArrayList18.add("A.\n" + "Option D");
+		nombreArrayList18.add("B.\n" + "Option C ");
+		nombreArrayList18.add("C.\n" + "Option A ");
+		nombreArrayList18.add("D.\n" + "Option B ");
+		hashMap.put("18", nombreArrayList18);
+		
+		
+		nombreArrayList19.add("What is the result?");
+		nombreArrayList19.add("Given the code fragment: What is the result?");
+		nombreArrayList19.add("A.\n" + "Compilation fails at both line n2 and line n3.");
+		nombreArrayList19.add("B.\n" + "Reading Card Checking Card ");
+		nombreArrayList19.add("C.\n" + "Compilation fails only at line n1. ");
+		nombreArrayList19.add("D.\n" + "Compilation fails only at line n2. ");
+		nombreArrayList19.add("D.\n" + "Compilation fails only at line n3. ");
+		hashMap.put("19", nombreArrayList19);
+		
+		
+		nombreArrayList20.add("Which modification enables the code to print 54321?");
 		nombreArrayList.add("Given the code fragment: Which modification enables the code to print 54321?");
 		nombreArrayList.add("A.\n" + "Replace line 12 With return (x > 0) ? false: true;");
 		nombreArrayList.add("B.\n" + "Replace line 6 with –x; and, at line 7, insert system, out. print (x); ");
 		nombreArrayList.add("C.\n" + "Replace line 6 with System, out. print (–x) ; ");
 		nombreArrayList.add("D.\n" + "At line 1, insert x –; ");
 		hashMap.put("20", nombreArrayList);
-		nombreArrayList.clear();
+		
 		nombreArrayList.add("Which modification enables the code fragment to print TrueDone?");
 		nombreArrayList.add("Given the code fragment: Which modification enables the code fragment to print TrueDone?");
 		nombreArrayList.add("A.\n" + "Replace line 5 With String result = “true”; Replace line 7 with case “true”:");
@@ -807,7 +864,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList.add("D.\n" + "manager.stockOption = 500; ");
 		hashMap.put("77", nombreArrayList);
 		
-		*/
+		
 
 		ArrayList<String> question = new ArrayList<String>();
 
@@ -890,7 +947,8 @@ public class JavaServiceImpl implements JavaService {
 		ArrayList<String> answer1 = new ArrayList<String>();
 		ArrayList<String> answer2 = new ArrayList<String>();
 		ArrayList<String> answer3 = new ArrayList<String>();
-		ArrayList<String> answer8 = new ArrayList<String>();
+		ArrayList<String> answer4 = new ArrayList<String>();
+		ArrayList<String> answer5 = new ArrayList<String>();
 		
 		answer1.add("1");
 		answer1.add("A");
@@ -901,16 +959,13 @@ public class JavaServiceImpl implements JavaService {
 		answer3.add("3");
 		answer3.add("A");
 		answers.put(3, answer3);
-
-		
-		LOG.info("respuestAS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"+answers);
-		/*answer.add("E");
-		answers.put(4, answer);
-		answer.clear();
-		answer.add("C");
-		answers.put(5, answer);
-		answer.clear();
-		answer.add("B");
+		answer4.add("E");
+		answers.put(4, answer4);
+		answer4.clear();
+		answer5.add("C");
+		answers.put(5, answer5);
+		answer5.clear();
+		/*answer.add("B");
 		answer.add("C");
 		answers.put(6, answer);
 		answer.clear();
