@@ -453,6 +453,8 @@ public class TestServiceImpl implements TestService {
 		answer31.add("C");
 		answer31.add("D");
 		answer31.add("");
+		answer31.add("");
+		answer31.add("");
 		answers.put(31, answer31);
 		
 		answer32.add("");
@@ -522,16 +524,16 @@ public class TestServiceImpl implements TestService {
 		answer37.add("");
 		answers.put(37, answer37);
 		
-		answer33.add("");
-		answer33.add("");
-		answer33.add("");
-		answer33.add("B");
-		answer33.add("");
-		answer33.add("D");
-		answer33.add("");
-		answer33.add("");
-		answer33.add("");
-		answers.put(38, answer33);
+		answer38.add("");
+		answer38.add("");
+		answer38.add("");
+		answer38.add("B");
+		answer38.add("");
+		answer38.add("D");
+		answer38.add("");
+		answer38.add("");
+		answer38.add("");
+		answers.put(38, answer38);
 		
 		answer39.add("");
 		answer39.add("");
@@ -2515,8 +2517,7 @@ public class TestServiceImpl implements TestService {
 
 	@Override
 	public int getFails() {
-		TestModel jvm = new TestModel();
-		return jvm.getFails();
+		return fail;
 	}
 
 	@Override

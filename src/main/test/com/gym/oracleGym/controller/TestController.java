@@ -38,7 +38,7 @@ public class TestController {
 
 
 		numQue = String.valueOf(testService.getTier());
-		int porcentaje = (Integer.valueOf(numQue)* 100)/76;
+		int porcentaje = (Integer.valueOf(numQue)* 100)/77;
 		
 
 		ModelAndView mav = new ModelAndView(ViewConstant.JAVA_FORM);
@@ -92,7 +92,7 @@ public class TestController {
 		System.out.println("respuestas buenas:" + testService.getSuccess());
 		System.out.println("respuestas malas:" + testService.getFails());
 		
-		if(numQue.equals("76") ) {
+		if(numQue.equals("77") ) {
 			
 	        return "redirect:/score";
 		}
