@@ -3,9 +3,9 @@ package com.gym.oracleGym.service;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.gym.oracleGym.model.JavaModel;
+import com.gym.oracleGym.model.TestModel;
 
-public interface JavaService {
+public interface TestService {
 	
 	public ArrayList<String> getQuestion(String questionNumber);
 	

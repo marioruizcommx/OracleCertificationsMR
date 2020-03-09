@@ -3,7 +3,7 @@ package com.gym.oracleGym.model;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class JavaModel {
+public class TestModel {
 	
 	public int score;
 	public int success;
@@ -38,14 +38,14 @@ public class JavaModel {
 	}
 	
 
-	public JavaModel(int score, int success, int fails, int quetionNow) {
+	public TestModel(int score, int success, int fails, int quetionNow) {
 		super();
 		this.score = score;
 		this.success = success;
 		this.fails = fails;
 		this.quetionNow = quetionNow;
 	}
-	public JavaModel() {}
+	public TestModel() {}
 	
 
 	

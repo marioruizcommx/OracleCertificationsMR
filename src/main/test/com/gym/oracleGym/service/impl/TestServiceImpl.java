@@ -8,15 +8,16 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Service;
 
-import com.gym.oracleGym.controller.JavaController;
+import com.gym.oracleGym.controller.TestController;
 import com.gym.oracleGym.model.ImgModel;
-import com.gym.oracleGym.model.JavaModel;
-import com.gym.oracleGym.service.JavaService;
+import com.gym.oracleGym.model.TestModel;
 
-@Service("JavaServiceImpl")
-public class JavaServiceImpl implements JavaService {
+import com.gym.oracleGym.service.TestService;
 
-	private static final Log LOG = LogFactory.getLog(JavaController.class);
+@Service("TestServiceImpl")
+public class TestServiceImpl implements TestService {
+
+	private static final Log LOG = LogFactory.getLog(TestController.class);
 	HashMap<String, ArrayList<String>> hashMap = new HashMap<String, ArrayList<String>>();
 
 	ArrayList<Integer> fails = new ArrayList<Integer>();
@@ -1562,14 +1563,14 @@ public class JavaServiceImpl implements JavaService {
 
 	@Override
 	public void setQuestionNow(int questionNumber) {
-		JavaModel jm = new JavaModel();
+		TestModel jm = new TestModel();
 		jm.setQuetionNow(questionNumber);
 
 	}
 
 	@Override
 	public int getFails() {
-		JavaModel jvm = new JavaModel();
+		TestModel jvm = new TestModel();
 		return jvm.getFails();
 	}
 

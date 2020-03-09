@@ -20,24 +20,24 @@ import java.util.Random;
 import com.gym.oracleGym.constant.ViewConstant;
 import com.gym.oracleGym.model.AnswersModel;
 import com.gym.oracleGym.model.ImgModel;
-import com.gym.oracleGym.model.JavaModel;
-import com.gym.oracleGym.service.JavaService;
+import com.gym.oracleGym.model.TestModel;
+import com.gym.oracleGym.service.TestService;
 
 @Controller
-public class JavaController {
+public class TestController {
 
-	private static final Log LOG = LogFactory.getLog(JavaController.class);
+	private static final Log LOG = LogFactory.getLog(TestController.class);
 	public String numQue="1";
 
 	@Autowired
-	@Qualifier("JavaServiceImpl")
-	private JavaService javaService;
+	@Qualifier("TestServiceImpl")
+	private TestService testService;
 
-	@GetMapping("/java")
+	@GetMapping("/test")
 	public ModelAndView showTest(Model model) {
 
 
-		numQue = String.valueOf(javaService.getTier());
+		numQue = String.valueOf(testService.getTier());
 		
 		
 
@@ -45,12 +45,12 @@ public class JavaController {
 		HashMap<String, String> imagen = new HashMap<String, String>();
 		
 		imagen.put("imagen", numQue + ".jpg");
-		javaService.setQuestionNow(Integer.valueOf(numQue));
-		javaService.setImage(numQue);
+		testService.setQuestionNow(Integer.valueOf(numQue));
+		testService.setImage(numQue);
 		mav.addObject("review", imagen);
-		mav.addObject("question", javaService.getQuestion(numQue));
+		mav.addObject("question", testService.getQuestion(numQue));
 
-		javaService.setTier(Integer.valueOf(numQue));
+		testService.setTier(Integer.valueOf(numQue));
 		System.out.println("+++++++++++++++++++++++++++++++ numque " + numQue);
 		
 		
@@ -59,7 +59,7 @@ public class JavaController {
 	}
 
 
-	@PostMapping("/java")
+	@PostMapping("/test")
 	public String workAnswer(@ModelAttribute(name = "answersU") AnswersModel answersModel, Model model) {
 
 		LOG.info("Metodo: que viene de respuestas: " + answersModel.toString());
@@ -85,19 +85,17 @@ public class JavaController {
 			ansU.add("F");
 		}
 
-		Boolean resultQuestion = javaService.verifyAnswer(Integer.valueOf(numQue), ansU);
+		Boolean resultQuestion = testService.verifyAnswer(Integer.valueOf(numQue), ansU);
 		System.out.println("La respuesta es:" + resultQuestion);
-		System.out.println("respuestas buenas:" + javaService.getSuccess());
-		System.out.println("respuestas malas:" + javaService.getFails());
+		System.out.println("respuestas buenas:" + testService.getSuccess());
+		System.out.println("respuestas malas:" + testService.getFails());
 		
 		if(numQue.equals("76") ) {
 			
 	        return "redirect:/score";
 		}
 		
-		return "redirect:/java";
-		
-
+		return "redirect:/test";
 
 	}
 	
@@ -105,9 +103,15 @@ public class JavaController {
 	public ModelAndView scoreFinal() {
 		ModelAndView mav = new ModelAndView(ViewConstant.SCORE_FINAL);
 		HashMap<String, String> scoreFinal = new HashMap<String, String>();
-		scoreFinal.put("score",String.valueOf( javaService.calculateScore()));
+		scoreFinal.put("score",String.valueOf( testService.calculateScore()));
 		mav.addObject("review", scoreFinal);
 		return mav;
 		
+	}
+	
+	@GetMapping("/getout")
+	public String getOut() {
+		
+		return "redirect:/test";	
 	}
 }
