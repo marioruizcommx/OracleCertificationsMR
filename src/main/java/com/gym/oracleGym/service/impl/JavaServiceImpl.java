@@ -116,6 +116,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList1.add("D.\n" + "200.0 : 100.0 ");
 		nombreArrayList1.add("");
 		nombreArrayList1.add("");
+		nombreArrayList1.add("");
 		hashMap.put("1", nombreArrayList1);
 		// LOG.info("++++++++++++++++++++++++++++++++++++++++++++++++"+hashMap);
 
@@ -125,6 +126,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList2.add("B.\n" + "Hello Universe! ");
 		nombreArrayList2.add("C.\n" + "Hello World! ");
 		nombreArrayList2.add("D.\n" + "Compilation fails. ");
+		nombreArrayList2.add("");
 		nombreArrayList2.add("");
 		nombreArrayList2.add("");
 		hashMap.put("2", nombreArrayList2);
@@ -137,6 +139,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList3.add("D.\n" + "5/4/14T00:00:00.000 ");
 		nombreArrayList3.add("");
 		nombreArrayList3.add("");
+		nombreArrayList3.add("");
 		hashMap.put("3", nombreArrayList3);
 
 		nombreArrayList4.add("What is the result?");
@@ -146,6 +149,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList4.add("C.\n" + "Compilation fails at line n2.");
 		nombreArrayList4.add("D.\n" + "A ClassCastException is thrown at line n1.");
 		nombreArrayList4.add("E.\n" + "A ClassCastException is thrown at line n2.");
+		nombreArrayList4.add("");
 		nombreArrayList4.add("");
 		hashMap.put("4", nombreArrayList4);
 
@@ -160,6 +164,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList5.add("D.\n" + "Inheritance");
 		nombreArrayList5.add("E.\n" + "Abstraction");
 		nombreArrayList5.add("");
+		nombreArrayList5.add("");
 		hashMap.put("5", nombreArrayList5);
 
 		nombreArrayList6.add("Which two modifications, made independently, enable the code to compile?");
@@ -172,6 +177,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList6.add("D.\n" + "Make the method at line n3 protected. ");
 		nombreArrayList6.add("E.\n" + "Make the method at line n4 public. ");
 		nombreArrayList6.add("");
+		nombreArrayList6.add("");
 		hashMap.put("6", nombreArrayList6);
 
 		nombreArrayList7.add("What is the result?");
@@ -181,6 +187,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList7.add("C.\n" + "C Compilation fails only at line n1 ");
 		nombreArrayList7.add("D.\n" + "Null 0 Auto 4W 150 Manual");
 		nombreArrayList7.add("E.\n" + "4W 100 Auto 4W 150 Manual ");
+		nombreArrayList7.add("");
 		nombreArrayList7.add("");
 		hashMap.put("7", nombreArrayList7);
 
@@ -192,6 +199,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList8.add("C.\n" + "Option D ");
 		nombreArrayList8.add("D.\n" + "Option E ");
 		nombreArrayList8.add("D.\n" + "Option A ");
+		nombreArrayList8.add("");
 		nombreArrayList8.add("");
 		nombreArrayList8.add("");
 		hashMap.put("8", nombreArrayList8);
@@ -212,6 +220,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList9.add("D.\n" + "Option D ");
 		nombreArrayList9.add("");
 		nombreArrayList9.add("");
+		nombreArrayList9.add("");
 		hashMap.put("9", nombreArrayList9);
 
 		nombreArrayList10.add("What is the result?");
@@ -220,6 +229,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList10.add("B.\n" + "No Match ");
 		nombreArrayList10.add("C.\n" + "Match 2 ");
 		nombreArrayList10.add("D.\n" + "Match 1 ");
+		nombreArrayList10.add("");
 		nombreArrayList10.add("");
 		nombreArrayList10.add("");
 		hashMap.put("10", nombreArrayList10);
@@ -232,6 +242,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList11.add("D.\n" + "Option A ");
 		nombreArrayList11.add("");
 		nombreArrayList11.add("");
+		nombreArrayList11.add("");
 		hashMap.put("11", nombreArrayList11);
 
 		nombreArrayList12.add("What is the result?");
@@ -241,6 +252,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList12.add("C.\n" + "A B C C ");
 		nombreArrayList12.add("D.\n" + "A B D ");
 		nombreArrayList12.add("E.\n" + "A B D C ");
+		nombreArrayList12.add("");
 		nombreArrayList12.add("");
 		hashMap.put("12", nombreArrayList12);
 
@@ -254,6 +266,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList13.add("D.\n" + "Option C ");
 		nombreArrayList13.add("");
 		nombreArrayList13.add("");
+		nombreArrayList13.add("");
 		hashMap.put("13", nombreArrayList13);
 
 		nombreArrayList14.add("Which option can replace xxx to enable the code to print 135?");
@@ -262,6 +275,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList14.add("B.\n" + "int e = 0; e < 5; e + = 2 ");
 		nombreArrayList14.add("C.\n" + "int e = 1; e < = 5; e + = 1 ");
 		nombreArrayList14.add("D.\n" + "int e = 1; e < 5; e+ =2 ");
+		nombreArrayList14.add("");
 		nombreArrayList14.add("");
 		nombreArrayList14.add("");
 		hashMap.put("14", nombreArrayList14);
@@ -280,6 +294,7 @@ public class JavaServiceImpl implements JavaService {
 						+ "declared as abstract. ");
 		nombreArrayList15.add("");
 		nombreArrayList15.add("");
+		nombreArrayList15.add("");
 		hashMap.put("15", nombreArrayList15);
 
 		nombreArrayList16.add("Which code fragment, when inserted at line 2, enables the code to compile?");
@@ -290,6 +305,7 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList16.add("C.\n" + "Option A ");
 		nombreArrayList16.add("D.\n" + "Option C ");
 		nombreArrayList16.add("E.\n" + "Option B ");
+		nombreArrayList16.add("");
 		nombreArrayList16.add("");
 		hashMap.put("16", nombreArrayList16);
 
@@ -326,6 +342,8 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList19.add("C.\n" + "Compilation fails only at line n1. ");
 		nombreArrayList19.add("D.\n" + "Compilation fails only at line n2. ");
 		nombreArrayList19.add("E.\n" + "Compilation fails only at line n3. ");
+		nombreArrayList19.add("");
+		nombreArrayList19.add("");
 		hashMap.put("19", nombreArrayList19);
 
 		nombreArrayList20.add("Which modification enables the code to print 54321?");
@@ -513,10 +531,10 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList35.add("A.\n" + "Option A");
 		nombreArrayList35.add("B.\n" + "Option D ");
 		nombreArrayList35.add("C.\n" + "Option B ");
-		nombreArrayList34.add("D.\n" + "Option C ");
-		nombreArrayList34.add("");
-		nombreArrayList34.add("");
-		nombreArrayList34.add("");
+		nombreArrayList35.add("D.\n" + "Option C ");
+		nombreArrayList35.add("");
+		nombreArrayList35.add("");
+		nombreArrayList35.add("");
 		hashMap.put("35", nombreArrayList35);
 
 		nombreArrayList36.add("Which code fragment, when inserted at line 9, enables the code to print true?");
@@ -527,9 +545,9 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList36.add("B.\n" + "String str2 = new String (str1); ");
 		nombreArrayList36.add("C.\n" + "String str2 = sb1. toString ();");
 		nombreArrayList36.add("D.\n" + "String str2 = “Duke”; ");
-		nombreArrayList34.add("");
-		nombreArrayList34.add("");
-		nombreArrayList34.add("");
+		nombreArrayList36.add("");
+		nombreArrayList36.add("");
+		nombreArrayList36.add("");
 		hashMap.put("36", nombreArrayList36);
 
 		nombreArrayList37.add("What is the result?");
@@ -804,7 +822,6 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList59.add("E.\n" + "Option E");
 		nombreArrayList59.add("");
 		nombreArrayList59.add("");
-		nombreArrayList59.add("");
 		hashMap.put("59", nombreArrayList59);
 
 		nombreArrayList60
@@ -953,6 +970,8 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList71.add("C.\n" + "A NullPointerException is thrown at runtime ");
 		nombreArrayList71.add("D.\n" + "True false ");
 		nombreArrayList71.add("");
+		nombreArrayList71.add("");
+		nombreArrayList71.add("");
 		hashMap.put("71", nombreArrayList71);
 
 		nombreArrayList72.add("What is the result?");
@@ -972,6 +991,8 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList73.add("C.\n" + "myStr: 7007, myNum: 9009");
 		nombreArrayList73.add("D.\n" + "myStr: 7007, myNum: 7007");
 		nombreArrayList73.add("");
+		nombreArrayList73.add("");
+		nombreArrayList73.add("");
 		hashMap.put("73", nombreArrayList73);
 
 		nombreArrayList74.add("Which two are benefits of polymorphism?");
@@ -980,7 +1001,8 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList74.add("B.\n" + "More efficient code at runtime");
 		nombreArrayList74.add("C.\n" + "More dynamic code at runtime ");
 		nombreArrayList74.add("D.\n" + "More flexible and reusable code");
-		nombreArrayList74.add("F.\n" + "Code that is protected from extension by other classes");
+		nombreArrayList74.add("E.\n" + "Code that is protected from extension by other classes");
+		nombreArrayList74.add("");
 		nombreArrayList74.add("");
 		hashMap.put("74", nombreArrayList74);
 
@@ -991,6 +1013,8 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList75.add("C.\n" + "1:2:3: ");
 		nombreArrayList75.add("D.\n" + "1:2:3:4:5: ");
 		nombreArrayList75.add("");
+		nombreArrayList75.add("");
+		nombreArrayList75.add("");
 		hashMap.put("75", nombreArrayList75);
 
 		nombreArrayList76.add("What is the result?");
@@ -999,6 +1023,8 @@ public class JavaServiceImpl implements JavaService {
 		nombreArrayList76.add("B.\n" + "false:true ");
 		nombreArrayList76.add("C.\n" + "false:false ");
 		nombreArrayList76.add("D.\n" + "true:true ");
+		nombreArrayList76.add("");
+		nombreArrayList76.add("");
 		nombreArrayList76.add("");
 		hashMap.put("76", nombreArrayList76);
 
@@ -1179,322 +1205,329 @@ public class JavaServiceImpl implements JavaService {
 		answer3.add("A");
 		answers.put(3, answer3);
 		
-		answer3.add("4");
+		answer4.add("4");
 		answer4.add("E");
 		answers.put(4, answer4);
 		
-		answer3.add("5");
+		answer5.add("5");
 		answer5.add("C");
 		answers.put(5, answer5);
 		
-		answer3.add("6");
-		answer1.add("1");
-		answer.add("B");
-		answer.add("C");
-		answers.put(6, answer);
+		answer6.add("6");
+		answer6.add("B");
+		answer6.add("C");
+		answers.put(6, answer6);
 		
-		answer1.add("7");
-		answer.add("D");
-		answers.put(7, answer);
+		answer7.add("7");
+		answer7.add("D");
+		answers.put(7, answer7);
 
-		answer.add("8");
-		answer.add("D");
-		answer.add("E");
-		answers.put(8, answer);
-		
-		answer1.add("9");
-		answer.add("A");
-		answer.add("C");
-		answers.put(9, answer);
-		
-		answer1.add("10");
-		answer.add("C");
-		answers.put(10, answer);
-		
-		answer1.add("11");
-		answer.add("C");
-		answers.put(11, answer);
-		
-		answer1.add("12");
-		answer.add("D");
-		answers.put(12, answer);
-		
-		answer1.add("13");
-		answer.add("D");
-		answers.put(13, answer);
-		
-		answer1.add("14");
-		answer.add("D");
-		answers.put(14, answer);
-		
-		answer1.add("15");
-		answer.add("A");
-		answers.put(15, answer);
-		
-		answer1.add("16");
-		answer.add("B");
-		answers.put(16, answer);
-		
-		answer1.add("17");
-		answer.add("B");
-		answer.add("D");
-		answer.add("E");
-		answers.put(17, answer);
-		
-		answer1.add("18");
-		answer.add("D");
-		answers.put(18, answer);
-		
-		answer1.add("19");
-		answer.add("A");
-		answers.put(19, answer);
-		
-		answer1.add("20");
-		answer.add("C");
-		answers.put(20, answer);
-		
-		answer1.add("21");
-		answer.add("C");
-		answers.put(21, answer);
-		
-		answer1.add("22");
-		answer.add("A");
-		answers.put(22, answer);
-		
-		answer1.add("23");
-		answer.add("A");
-		answers.put(23, answer);
-		
-		answer1.add("24");
-		answer.add("D");
-		answers.put(24, answer);
-		
-		answer1.add("25");
-		answer.add("D");
-		answer.add("E");
-		answers.put(25, answer);
-		
-		answer1.add("26");
-		answer.add("D");
-		answers.put(26, answer);
-		
-		answer1.add("27");
-		answer.add("D");
-		answers.put(27, answer);
-		
-		answer1.add("28");
-		answer.add("C");
-		answers.put(28, answer);
-		
-		answer1.add("29");
-		answer.add("C");
-		answers.put(29, answer);
-		
-		answer1.add("30");
-		answer.add("B");
-		answers.put(30, answer);
-		
-		answer1.add("31");
-		answer.add("A");
-		answer.add("C");
-		answer.add("D");
-		answers.put(31, answer);
-		
-		answer1.add("32");
-		answer.add("D");
-		answers.put(32, answer);
-		
-		answer1.add("33");
-		answer.add("B");
-		answers.put(33, answer);
-		
-		answer1.add("34");
-		answer.add("C");
-		answers.put(34, answer);
-		
-		answer1.add("35");
-		answer.add("B");
-		answers.put(35, answer);
-		
-		answer1.add("36");
-		answer.add("C");
-		answers.put(36, answer);
-		
-		answer1.add("37");
-		answer.add("D");
-		answers.put(37, answer);
-		
-		answer1.add("33");
-		answer.add("B");
-		answer.add("D");
-		answers.put(38, answer);
-		
-		answer1.add("39");
-		answer.add("B");
-		answers.put(39, answer);
-		
-		answer1.add("40");
-		answer.add("A");
-		answer.add("E");
-		answer.add("F");
-		answers.put(40, answer);
-		
-		answer1.add("41");
-		answer.add("F");
-		answers.put(41, answer);
-		
-		answer1.add("42");
-		answer.add("A");
-		answer.add("B");
-		answers.put(42, answer);
-		
-		answer1.add("43");
-		answer.add("C");
-		answers.put(43, answer);
-		
-		answer1.add("44");
-		answer.add("E");
-		answers.put(44, answer);
-		
-		answer1.add("45");
-		answer.add("D");
-		answers.put(45, answer);
-		
-		answer1.add("46");
-		answer.add("C");
-		answers.put(46, answer);
-		
-		answer1.add("47");
-		answer.add("C");
-		answers.put(47, answer);
-		
-		answer1.add("48");
-		answer.add("C");
-		answers.put(48, answer);
-		
-		answer1.add("49");
-		answer.add("B");
-		answers.put(49, answer);
-		
-		answer1.add("50");
-		answer.add("A");
-		answers.put(50, answer);
-		
-		answer1.add("51");
-		answer.add("D");
-		answers.put(51, answer);
-		
-		answer1.add("52");
-		answer.add("A");
-		answers.put(52, answer);
-		
-		answer1.add("53");
-		answer.add("A");
-		answers.put(53, answer);
-		
-		answer1.add("54");
-		answer.add("B");
-		answers.put(54, answer);
-		
-		answer1.add("55");
-		answer.add("C");
-		answer.add("D");
-		answer.add("E");
-		answers.put(55, answer);
-		
-		answer1.add("56");
-		answer.add("E");
-		answers.put(56, answer);
-		
-		answer1.add("57");
-		answer.add("D");
-		answers.put(57, answer);
-		
-		answer1.add("58");
-		answer.add("B");
-		answers.put(58, answer);
-		
-		answer1.add("59");
-		answer.add("A");
-		answers.put(59, answer);
-		
-		answer1.add("60");
-		answer.add("A");
-		answers.put(60, answer);
-		
-		answer1.add("61");
-		answer.add("C");
-		answers.put(61, answer);
-		
-		answer1.add("62");
-		answer.add("A");
-		answer.add("B");
-		answers.put(62, answer);
-		
-		answer1.add("63");
-		answer.add("B");
-		answers.put(63, answer);
-		
-		answer1.add("64");
-		answer.add("B");
-		answer.add("E");
-		answers.put(64, answer);
-		
-		answer1.add("65");
-		answer.add("D");
-		answers.put(65, answer);
-		
-		answer1.add("66");
-		answer.add("D");
-		answers.put(66, answer);
-		
-		answer1.add("67");
-		answer.add("D");
-		answers.put(67, answer);
-		
-		answer1.add("68");
-		answer.add("D");
-		answers.put(68, answer);
-		
-		answer1.add("69");
-		answer.add("D");
-		answers.put(69, answer);
-		
-		answer1.add("70");
-		answer.add("A");
-		answer.add("B");
-		answer.add("C");
-		answers.put(70, answer);
-		
-		answer1.add("71");
-		answer.add("A");
-		answers.put(71, answer);
-		
-		answer1.add("72");
-		answer.add("A");
-		answers.put(72, answer);
-		
-		answer1.add("73");
-		answer.add("C");
-		answers.put(73, answer);
-		
-		answer1.add("74");
-		answer.add("B");
-		answer.add("D");
-		answers.put(74, answer);
-		
-		answer1.add("75");
-		answer.add("D");
-		answers.put(75, answer);
-		
-		answer1.add("76");
-		answer.add("B");
-		answers.put(76, answer);
-		
-		answer1.add("77");
-		answer.add("D");
-		answer.add("E");
-		answers.put(77, answer);
+		answer8.add("8");
+		answer8.add("D");
+		answer8.add("E");
+		answers.put(8, answer8);
+		
+		answer9.add("9");
+		answer9.add("A");
+		answer9.add("C");
+		answers.put(9, answer9);
+		
+		answer10.add("10");
+		answer10.add("C");
+		answers.put(10, answer10);
+		
+		answer11.add("11");
+		answer11.add("C");
+		answers.put(11, answer11);
+		
+		answer12.add("12");
+		answer12.add("D");
+		answers.put(12, answer12);
+		
+		answer13.add("13");
+		answer13.add("D");
+		answers.put(13, answer13);
+		
+		answer14.add("14");
+		answer14.add("D");
+		answers.put(14, answer14);
+		
+		answer15.add("15");
+		answer15.add("A");
+		answers.put(15, answer15);
+		
+		answer16.add("16");
+		answer16.add("B");
+		answers.put(16, answer16);
+		
+		answer17.add("17");
+		answer17.add("B");
+		answer17.add("D");
+		answer17.add("E");
+		answers.put(17, answer17);
+		
+		answer18.add("18");
+		answer18.add("D");
+		answers.put(18, answer18);
+		
+		answer19.add("19");
+		answer19.add("A");
+		answers.put(19, answer19);
+		
+		answer20.add("20");
+		answer20.add("C");
+		answers.put(20, answer20);
+		
+		answer21.add("21");
+		answer21.add("C");
+		answers.put(21, answer21);
+		
+		answer22.add("22");
+		answer22.add("A");
+		answers.put(22, answer22);
+		
+		answer23.add("23");
+		answer23.add("A");
+		answers.put(23, answer23);
+		
+		answer24.add("24");
+		answer24.add("D");
+		answers.put(24, answer24);
+		
+		answer25.add("25");
+		answer25.add("D");
+		answer25.add("E");
+		answers.put(25, answer25);
+		
+		answer26.add("26");
+		answer26.add("D");
+		answers.put(26, answer26);
+		
+		answer27.add("27");
+		answer27.add("D");
+		answers.put(27, answer27);
+		
+		answer28.add("28");
+		answer28.add("C");
+		answers.put(28, answer28);
+		
+		answer29.add("29");
+		answer29.add("C");
+		answers.put(29, answer29);
+		
+		answer30.add("30");
+		answer30.add("B");
+		answers.put(30, answer30);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		answer31.add("31");
+		answer31.add("A");
+		answer31.add("C");
+		answer31.add("D");
+		answers.put(31, answer31);
+		
+		answer32.add("32");
+		answer32.add("D");
+		answers.put(32, answer32);
+		
+		answer33.add("33");
+		answer33.add("B");
+		answers.put(33, answer33);
+		
+		answer34.add("34");
+		answer34.add("C");
+		answers.put(34, answer34);
+		
+		answer35.add("35");
+		answer35.add("B");
+		answers.put(35, answer35);
+		
+		answer36.add("36");
+		answer36.add("C");
+		answers.put(36, answer36);
+		
+		answer37.add("37");
+		answer37.add("D");
+		answers.put(37, answer37);
+		
+		answer33.add("33");
+		answer33.add("B");
+		answer33.add("D");
+		answers.put(38, answer33);
+		
+		answer39.add("39");
+		answer39.add("B");
+		answers.put(39, answer39);
+		
+		answer40.add("40");
+		answer40.add("A");
+		answer40.add("E");
+		answer40.add("F");
+		answers.put(40, answer40);
+		
+		answer41.add("41");
+		answer41.add("F");
+		answers.put(41, answer41);
+		
+		answer42.add("42");
+		answer42.add("A");
+		answer42.add("B");
+		answers.put(42, answer42);
+		
+		answer43.add("43");
+		answer43.add("C");
+		answers.put(43, answer43);
+		
+		answer44.add("44");
+		answer44.add("E");
+		answers.put(44, answer44);
+		
+		answer45.add("45");
+		answer45.add("D");
+		answers.put(45, answer45);
+		
+		answer46.add("46");
+		answer46.add("C");
+		answers.put(46, answer46);
+		
+		answer47.add("47");
+		answer47.add("C");
+		answers.put(47, answer47);
+		
+		answer48.add("48");
+		answer48.add("C");
+		answers.put(48, answer48);
+		
+		answer49.add("49");
+		answer49.add("B");
+		answers.put(49, answer49);
+		
+		answer50.add("50");
+		answer50.add("A");
+		answers.put(50, answer50);
+		
+		answer51.add("51");
+		answer51.add("D");
+		answers.put(51, answer51);
+		
+		answer52.add("52");
+		answer52.add("A");
+		answers.put(52, answer52);
+		
+		answer53.add("53");
+		answer53.add("A");
+		answers.put(53, answer53);
+		
+		answer54.add("54");
+		answer54.add("B");
+		answers.put(54, answer54);
+		
+		answer55.add("55");
+		answer55.add("C");
+		answer55.add("D");
+		answer55.add("E");
+		answers.put(55, answer55);
+		
+		answer56.add("56");
+		answer56.add("E");
+		answers.put(56, answer56);
+		
+		answer57.add("57");
+		answer57.add("D");
+		answers.put(57, answer57);
+		
+		answer58.add("58");
+		answer58.add("B");
+		answers.put(58, answer58);
+		
+		answer59.add("59");
+		answer59.add("A");
+		answers.put(59, answer59);
+		
+		answer60.add("60");
+		answer60.add("A");
+		answers.put(60, answer60);
+		
+		answer61.add("61");
+		answer61.add("C");
+		answers.put(61, answer61);
+		
+		answer62.add("62");
+		answer62.add("A");
+		answer62.add("B");
+		answers.put(62, answer62);
+		
+		answer63.add("63");
+		answer63.add("B");
+		answers.put(63, answer63);
+		
+		answer64.add("64");
+		answer64.add("B");
+		answer64.add("E");
+		answers.put(64, answer64);
+		
+		answer65.add("65");
+		answer65.add("D");
+		answers.put(65, answer65);
+		
+		answer66.add("66");
+		answer66.add("D");
+		answers.put(66, answer66);
+		
+		answer67.add("67");
+		answer67.add("D");
+		answers.put(67, answer67);
+		
+		answer68.add("68");
+		answer68.add("D");
+		answers.put(68, answer68);
+		
+		answer69.add("69");
+		answer69.add("D");
+		answers.put(69, answer69);
+		
+		answer70.add("70");
+		answer70.add("A");
+		answer70.add("B");
+		answer70.add("C");
+		answers.put(70, answer70);
+		
+		answer71.add("71");
+		answer71.add("A");
+		answers.put(71, answer71);
+		
+		answer72.add("72");
+		answer72.add("A");
+		answers.put(72, answer72);
+		
+		answer73.add("73");
+		answer73.add("C");
+		answers.put(73, answer73);
+		
+		answer74.add("74");
+		answer74.add("B");
+		answer74.add("D");
+		answers.put(74, answer74);
+		
+		answer75.add("75");
+		answer75.add("D");
+		answers.put(75, answer75);
+		
+		answer76.add("76");
+		answer76.add("B");
+		answers.put(76, answer76);
+		
+		answer77.add("77");
+		answer77.add("D");
+		answer77.add("E");
+		answers.put(77, answer77);
 
 		answer = answers.get(questionNumber);
 

@@ -11,27 +11,41 @@
 
 <!-- Custom styles for this template -->
 <link href="#" th:href="@{/css/gym.css}" rel="stylesheet" />
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
 
 </head>
 
 <body>
+<div class="p-3 mb-2 bg-light text-dark">
+
 
 	<header id="main-header">
 
-		<a id="logo-header" href="#"> <span class="site-name">GYM
-				For Oracle Certifications</span> <span class="site-desc">Programacion
-				Java / Base de datos Oracle / PL SQL</span>
-		</a>
-		<!-- / #logo-header -->
-
-		<nav>
-			<ul>
-				<li><a href="java.html">Java</a></li>
-				<li><a href="plsql.html">PL/SQL</a></li>
-				<li><a href="oracle.html">Oracle DB</a></li>
-			</ul>
-		</nav>
 		<!-- / nav -->
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <h1 class=" ">GYM For Oracle Certifications</h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><h4>Java</h4> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><h4>PL/SQL</h4></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#"><h4>Oracle DB</h4></a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 	</header>
 	<!-- / #main-header -->
@@ -40,59 +54,78 @@
 	<section id="main-content">
 
 		<article>
+            
+            
 
+			<div class="container card bg-light text-center w-50">
+				<form class="form-group" action="#" th:action="@{/java}"
+					th:object="${AnswersModel}" method="post">
+					<fieldset class="container">
+					    <br>
+						<div class="row text-left" th:if="${not #lists.isEmpty(question[0])}">
+							<h1 th:text="${question[0]}"></h1>
+						</div>
+						<div class="row text-left" th:if="${not #lists.isEmpty(question[1])}">
+							<h3 th:text="${question[1]}"></h3>
+						</div>
+						</br>
+					</fieldset>
+					
+					
+						
+					<fieldset class="container">
+					    <div class="container">
+					    <div class="row " th:if="${not #lists.isEmpty(question[1])}">
+							<img th:src="@{/imgs/java/808/{image}(image=${review.imagen})}">
+						</div>
+					     <div class="container">
 
-			<div class="content">
-				<form action="#" th:action="@{/java}" th:object="${AnswersModel}" method="post">
-					<fieldset>
-                        <div class="custom-control custom-radio custom-control-inline" th:if="${not #lists.isEmpty(question[0])}">
-						<h3 th:text="${question[0]}"></h3>
+						
+						
+
+						
+						
+						<div class="row checkbox" th:if="${not #lists.isEmpty(question[2])}">
+							<h3><input type="checkbox" name="optionA" value="1" id="optionA" /> <label
+				                       for="optionA"
+								th:text="${question[2]}">OptionA</label></h3></br>
 						</div>
 
-						<p> 
-						    <div class="custom-control custom-radio custom-control-inline" th:if="${not #lists.isEmpty(question[1])}">
-							<h4 th:text="${question[1]}"></h4>
-							</div>
-							</br>
+						<div class="row checkbox" th:if="${not #lists.isEmpty(question[3])}">
+							<h3><input type="checkbox" name="optionB" value="1" id="optionB" /> <label
+								 for="optionA"
+								th:text="${question[3]}">OptionB</label></h3></br>
+						</div>
 
-							<div class="custom-control custom-radio custom-control-inline" th:if="${not #lists.isEmpty(question[1])}">
-							<img th:src="@{/imgs/java/808/{image}(image=${review.imagen})}">
-							</div>
-							
-							<div class="custom-control custom-radio custom-control-inline" th:if="${not #lists.isEmpty(question[2])}">
-								<input type="radio" name="optionA" value="1" id="optionA"  />
-								<label class="custom-control-label" for="optionA" th:text="${question[2]}">OptionA</label></br> 
-							</div>
-							
-							<div class="custom-control custom-radio custom-control-inline" th:if="${not #lists.isEmpty(question[3])}">
-							    <input type="radio" name="optionB" value="1" id="optionB" />
-							    <label class="custom-control-label" for="optionA" th:text="${question[3]}">OptionB</label></br> 
-							</div>
-							
-						    <div class="custom-control custom-radio custom-control-inline" th:if="${not #lists.isEmpty(question[4])}">
-							    <input type="radio" name="optionC" value="1" id="optionC" /> 
-							    <label class="custom-control-label" for="optionA" th:text="${question[4]}">OptionC</label></br> 
-							</div>
-							
-						    <div class="custom-control custom-radio custom-control-inline" th:if="${not #lists.isEmpty(question[5])}">
-	                            <input type="radio" name="optionD" value="1" id="optionD" /> 
-	                            <label class="custom-control-label" for="optionA" th:text="${question[5]}">OptionD</label></br> 
-							</div>
+						<div class="row checkbox" th:if="${not #lists.isEmpty(question[4])}">
+							<h3><input type="checkbox" name="optionC" value="1" id="optionC" /> <label
+								 for="optionA"
+								th:text="${question[4]}">OptionC</label></h3></br>
+						</div>
 
-                            <div th:if="${not #lists.isEmpty(question[6])}">
-							      <input type="radio" name="optionE" value="1" id="optionE"/> 
-							      <label class="custom-control-label" for="optionA" th:text="${question[6]}">OptionE</label></br>
-							</div>
-							<div th:if="${not #lists.isEmpty(question[7])}">
-                                  <input type="radio" name="optionF" value="1" id="optionF"/>
-                                  <label class="custom-control-label" for="optionA" th:text="${question[7]}">OptionF</label></br>
-							</div>
-						</p>
+						<div class="row checkbox" th:if="${not #lists.isEmpty(question[5])}">
+							<h3><input type="checkbox" name="optionD" value="1" id="optionD" /> <label
+								 for="optionA"
+								th:text="${question[5]}">OptionD</label></h3></br>
+						</div>
+
+						<div class="row checkbox" th:if="${not #lists.isEmpty(question[6])}">
+							<h3><input type="checkbox" name="optionE" value="1" id="optionE" /> <label
+								 for="optionA"
+								th:text="${question[6]}">OptionE</label></h3></br>
+						</div>
+						<div class="row checkbox" th:if="${not #lists.isEmpty(question[7])}">
+							<h3><input type="checkbox" name="optionF" value="1" id="optionF" /> <label
+								 for="optionA"
+								th:text="${question[7]}">OptionF</label></h3></br>
+						</div>
+					</div>
+						</div>
 
 
-						<p>
-							<input type="submit" value="Send Answer">
-						</p>
+						<button type="submit" class="btn btn-primary btn-lg">Next Question</button>
+                        <button type="submit" class="btn btn-danger btn-lg">Get Out</button>
+                        
 					</fieldset>
 				</form>
 			</div>
@@ -102,14 +135,24 @@
 
 	</section>
 	<!-- / #main-content -->
-
-
-	<footer id="main-footer">
-		<p>
-			&copy; 2020 <a href="#">marioruiz.com.mx</a>
-		</p>
-	</footer>
+   <br>
+  <div class="progress">
+  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div>
 	<!-- / #main-footer -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+		<div class="progress">
 
 </body>
 </html>
