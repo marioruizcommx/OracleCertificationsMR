@@ -25,6 +25,950 @@ public class TestServiceImpl implements TestService {
 	public int fail = 0;
 	public int succes = 1;
 	public int tier = 1;
+	
+	@Override
+	public ArrayList<String> getValidAnswers(String questionNumber){
+		HashMap<Integer, ArrayList<String>> answers = new HashMap<Integer, ArrayList<String>>();
+		// answersUser.add(String.valueOf(questionNumber));
+		ArrayList<String> answer = new ArrayList<String>();
+		ArrayList<String> answer1 = new ArrayList<String>();
+		ArrayList<String> answer2 = new ArrayList<String>();
+		ArrayList<String> answer3 = new ArrayList<String>();
+		ArrayList<String> answer4 = new ArrayList<String>();
+		ArrayList<String> answer5 = new ArrayList<String>();
+		ArrayList<String> answer6 = new ArrayList<String>();
+		ArrayList<String> answer7 = new ArrayList<String>();
+		ArrayList<String> answer8 = new ArrayList<String>();
+		ArrayList<String> answer9 = new ArrayList<String>();
+		ArrayList<String> answer10 = new ArrayList<String>();
+		ArrayList<String> answer11 = new ArrayList<String>();
+		ArrayList<String> answer12 = new ArrayList<String>();
+		ArrayList<String> answer13 = new ArrayList<String>();
+		ArrayList<String> answer14 = new ArrayList<String>();
+		ArrayList<String> answer15 = new ArrayList<String>();
+		ArrayList<String> answer16 = new ArrayList<String>();
+		ArrayList<String> answer17 = new ArrayList<String>();
+		ArrayList<String> answer18 = new ArrayList<String>();
+		ArrayList<String> answer19 = new ArrayList<String>();
+		ArrayList<String> answer20 = new ArrayList<String>();
+		ArrayList<String> answer21 = new ArrayList<String>();
+		ArrayList<String> answer22 = new ArrayList<String>();
+		ArrayList<String> answer23 = new ArrayList<String>();
+		ArrayList<String> answer24 = new ArrayList<String>();
+		ArrayList<String> answer25 = new ArrayList<String>();
+		ArrayList<String> answer26 = new ArrayList<String>();
+		ArrayList<String> answer27 = new ArrayList<String>();
+		ArrayList<String> answer28 = new ArrayList<String>();
+		ArrayList<String> answer29 = new ArrayList<String>();
+		ArrayList<String> answer30 = new ArrayList<String>();
+		ArrayList<String> answer31 = new ArrayList<String>();
+		ArrayList<String> answer32 = new ArrayList<String>();
+		ArrayList<String> answer33 = new ArrayList<String>();
+		ArrayList<String> answer34 = new ArrayList<String>();
+		ArrayList<String> answer35 = new ArrayList<String>();
+		ArrayList<String> answer36 = new ArrayList<String>();
+		ArrayList<String> answer37 = new ArrayList<String>();
+		ArrayList<String> answer38 = new ArrayList<String>();
+		ArrayList<String> answer39 = new ArrayList<String>();
+		ArrayList<String> answer40 = new ArrayList<String>();
+		ArrayList<String> answer41 = new ArrayList<String>();
+		ArrayList<String> answer42 = new ArrayList<String>();
+		ArrayList<String> answer43 = new ArrayList<String>();
+		ArrayList<String> answer44 = new ArrayList<String>();
+		ArrayList<String> answer45 = new ArrayList<String>();
+		ArrayList<String> answer46 = new ArrayList<String>();
+		ArrayList<String> answer47 = new ArrayList<String>();
+		ArrayList<String> answer48 = new ArrayList<String>();
+		ArrayList<String> answer49 = new ArrayList<String>();
+		ArrayList<String> answer50 = new ArrayList<String>();
+		ArrayList<String> answer51 = new ArrayList<String>();
+		ArrayList<String> answer52 = new ArrayList<String>();
+		ArrayList<String> answer53 = new ArrayList<String>();
+		ArrayList<String> answer54 = new ArrayList<String>();
+		ArrayList<String> answer55 = new ArrayList<String>();
+		ArrayList<String> answer56 = new ArrayList<String>();
+		ArrayList<String> answer57 = new ArrayList<String>();
+		ArrayList<String> answer58 = new ArrayList<String>();
+		ArrayList<String> answer59 = new ArrayList<String>();
+		ArrayList<String> answer60 = new ArrayList<String>();
+		ArrayList<String> answer61 = new ArrayList<String>();
+		ArrayList<String> answer62 = new ArrayList<String>();
+		ArrayList<String> answer63 = new ArrayList<String>();
+		ArrayList<String> answer64 = new ArrayList<String>();
+		ArrayList<String> answer65 = new ArrayList<String>();
+		ArrayList<String> answer66 = new ArrayList<String>();
+		ArrayList<String> answer67 = new ArrayList<String>();
+		ArrayList<String> answer68 = new ArrayList<String>();
+		ArrayList<String> answer69 = new ArrayList<String>();
+		ArrayList<String> answer70 = new ArrayList<String>();
+		ArrayList<String> answer71 = new ArrayList<String>();
+		ArrayList<String> answer72 = new ArrayList<String>();
+		ArrayList<String> answer73 = new ArrayList<String>();
+		ArrayList<String> answer74 = new ArrayList<String>();
+		ArrayList<String> answer75 = new ArrayList<String>();
+		ArrayList<String> answer76 = new ArrayList<String>();
+		ArrayList<String> answer77 = new ArrayList<String>();
+
+		
+		answer1.add("");
+		answer1.add("");
+		answer1.add("A");
+		answer1.add("");
+		answer1.add("");
+		answer1.add("");
+		answer1.add("");
+		answer1.add("");
+		answer1.add("");
+		answers.put(1, answer1);
+		
+		answer2.add("");
+		answer2.add("");
+		answer2.add("A");
+		answer2.add("");
+		answer2.add("");
+		answer2.add("");
+		answer2.add("");
+		answer2.add("");
+		answer2.add("");
+		answers.put(2, answer2);
+
+		answer3.add("");
+		answer3.add("");
+		answer3.add("A");
+		answer3.add("");
+		answer3.add("");
+		answer3.add("");
+		answer3.add("");
+		answer3.add("");
+		answer3.add("");
+		answers.put(3, answer3);
+		
+		answer4.add("");
+		answer4.add("");
+		answer4.add("");
+		answer4.add("");
+		answer4.add("");
+		answer4.add("");
+		answer4.add("E");
+		answer4.add("");
+		answer4.add("");
+		answers.put(4, answer4);
+		
+		
+		
+		answer5.add("");
+		answer5.add("");
+		answer5.add("");
+		answer5.add("");
+		answer5.add("C");
+		answer5.add("");
+		answer5.add("");
+		answer5.add("");
+		answer5.add("");
+		answers.put(5, answer5);
+		
+		answer6.add("");
+		answer6.add("");
+		answer6.add("");
+		answer6.add("B");
+		answer6.add("C");
+		answer6.add("");
+		answer6.add("");
+		answer6.add("");
+		answer6.add("");
+		answers.put(6, answer6);
+		
+		answer7.add("");
+		answer7.add("");
+		answer7.add("");
+		answer7.add("");
+		answer7.add("");
+		answer7.add("D");
+		answer7.add("");
+		answer7.add("");
+		answer7.add("");
+		answers.put(7, answer7);
+
+		
+		answer8.add("");
+		answer8.add("");
+		answer8.add("");
+		answer8.add("");
+		answer8.add("");
+		answer8.add("D");
+		answer8.add("E");
+		answer8.add("");
+		answer8.add("");
+		answers.put(8, answer8);
+		
+		answer9.add("");
+		answer9.add("");
+		answer9.add("A");
+		answer9.add("");
+		answer9.add("C");
+		answer9.add("");
+		answer9.add("");
+		answer9.add("");
+		answer9.add("");
+		answers.put(9, answer9);
+		
+		answer10.add("");
+		answer10.add("");
+		answer10.add("");
+		answer10.add("");
+		answer10.add("C");
+		answer10.add("");
+		answer10.add("");
+		answer10.add("");
+		answer10.add("");
+		answers.put(10, answer10);
+		
+		answer11.add("");
+		answer11.add("");
+		answer11.add("");
+		answer11.add("");
+		answer11.add("C");
+		answer11.add("");
+		answer11.add("");
+		answer11.add("");
+		answer11.add("");
+		answers.put(11, answer11);
+		
+		answer12.add("");
+		answer12.add("");
+		answer12.add("");
+		answer12.add("");
+		answer12.add("");
+		answer12.add("D");
+		answer12.add("");
+		answer12.add("");
+		answer12.add("");
+		answers.put(12, answer12);
+		
+		
+		answer13.add("");
+		answer13.add("");
+		answer13.add("");
+		answer13.add("");
+		answer13.add("");
+		answer13.add("D");
+		answer13.add("");
+		answer13.add("");
+		answer13.add("");
+		answers.put(13, answer13);
+		
+		answer14.add("");
+		answer14.add("");
+		answer14.add("");
+		answer14.add("");
+		answer14.add("");
+		answer14.add("D");
+		answer14.add("");
+		answer14.add("");
+		answer14.add("");
+		answers.put(14, answer14);
+		
+		answer15.add("");
+		answer15.add("");
+		answer15.add("A");
+		answer15.add("");
+		answer15.add("");
+		answer15.add("");
+		answer15.add("");
+		answer15.add("");
+		answer15.add("");
+		answers.put(15, answer15);
+		
+		answer16.add("");
+		answer16.add("");
+		answer16.add("");
+		answer16.add("B");
+		answer16.add("");
+		answer16.add("");
+		answer16.add("");
+		answer16.add("");
+		answer16.add("");
+		answers.put(16, answer16);
+		
+		answer17.add("");
+		answer17.add("");
+		answer17.add("");
+		answer17.add("B");
+		answer17.add("");
+		answer17.add("D");
+		answer17.add("E");
+		answer17.add("");
+		answer17.add("");
+		answers.put(17, answer17);
+		
+		answer18.add("");
+		answer18.add("");
+		answer18.add("");
+		answer18.add("");
+		answer18.add("");
+		answer18.add("D");
+		answer18.add("");
+		answer18.add("");
+		answer18.add("");
+		answers.put(18, answer18);
+		
+		answer19.add("");
+		answer19.add("");
+		answer19.add("A");
+		answer19.add("");
+		answer19.add("");
+		answer19.add("");
+		answer19.add("");
+		answer19.add("");
+		answer19.add("");
+		answers.put(19, answer19);
+		
+		answer20.add("");
+		answer20.add("");
+		answer20.add("");
+		answer20.add("");
+		answer20.add("C");
+		answer20.add("");
+		answer20.add("");
+		answer20.add("");
+		answer20.add("");
+		answers.put(20, answer20);
+		
+		answer21.add("");
+		answer21.add("");
+		answer21.add("");
+		answer21.add("");
+		answer21.add("C");
+		answer21.add("");
+		answer21.add("");
+		answer21.add("");
+		answer21.add("");
+		answers.put(21, answer21);
+		
+		answer22.add("");
+		answer22.add("");
+		answer22.add("A");
+		answer22.add("");
+		answer22.add("");
+		answer22.add("");
+		answer22.add("");
+		answer22.add("");
+		answer22.add("");
+		answers.put(22, answer22);
+		
+		
+		answer23.add("");
+		answer23.add("");
+		answer23.add("A");
+		answer23.add("");
+		answer23.add("");
+		answer23.add("");
+		answer23.add("");
+		answer23.add("");
+		answer23.add("");
+		answers.put(23, answer23);
+		
+		answer24.add("");
+		answer24.add("");
+		answer24.add("");
+		answer24.add("");
+		answer24.add("");
+		answer24.add("D");
+		answer24.add("");
+		answer24.add("");
+		answer24.add("");
+		answers.put(24, answer24);
+		
+		answer25.add("");
+		answer25.add("");
+		answer25.add("");
+		answer25.add("");
+		answer25.add("");
+		answer25.add("D");
+		answer25.add("E");
+		answer25.add("");
+		answer25.add("");
+		answers.put(25, answer25);
+		
+		answer26.add("");
+		answer26.add("");
+		answer26.add("");
+		answer26.add("");
+		answer26.add("");
+		answer26.add("D");
+		answer26.add("");
+		answer26.add("");
+		answer26.add("");
+		answers.put(26, answer26);
+		
+		answer27.add("");
+		answer27.add("");
+		answer27.add("");
+		answer27.add("");
+		answer27.add("");
+		answer27.add("D");
+		answer27.add("");
+		answer27.add("");
+		answer27.add("");
+		answers.put(27, answer27);
+		
+		answer28.add("");
+		answer28.add("");
+		answer28.add("");
+		answer28.add("");
+		answer28.add("C");
+		answer28.add("");
+		answer28.add("");
+		answer28.add("");
+		answer28.add("");
+		answers.put(28, answer28);
+		
+		answer29.add("");
+		answer29.add("");
+		answer29.add("");
+		answer29.add("");
+		answer29.add("C");
+		answer29.add("");
+		answer29.add("");
+		answer29.add("");
+		answer29.add("");
+		answers.put(29, answer29);
+		
+		answer30.add("");
+		answer30.add("");
+		answer30.add("");
+		answer30.add("B");
+		answer30.add("");
+		answer30.add("");
+		answer30.add("");
+		answer30.add("");
+		answer30.add("");
+		answers.put(30, answer30);
+		
+
+		answer31.add("");
+		answer31.add("");
+		answer31.add("A");
+		answer31.add("");
+		answer31.add("C");
+		answer31.add("D");
+		answer31.add("");
+		answers.put(31, answer31);
+		
+		answer32.add("");
+		answer32.add("");
+		answer32.add("");
+		answer32.add("");
+		answer32.add("");
+		answer32.add("D");
+		answer32.add("");
+		answer32.add("");
+		answer32.add("");
+		answers.put(32, answer32);
+		
+		answer33.add("");
+		answer33.add("");
+		answer33.add("");
+		answer33.add("B");
+		answer33.add("");
+		answer33.add("");
+		answer33.add("");
+		answer33.add("");
+		answer33.add("");
+		answer33.add("");
+		answers.put(33, answer33);
+		
+		answer34.add("");
+		answer34.add("");
+		answer34.add("");
+		answer34.add("");
+		answer34.add("C");
+		answer34.add("");
+		answer34.add("");
+		answer34.add("");
+		answer34.add("");
+		answers.put(34, answer34);
+		
+		answer35.add("");
+		answer35.add("");
+		answer35.add("");
+		answer35.add("B");
+		answer35.add("");
+		answer35.add("");
+		answer35.add("");
+		answer35.add("");
+		answer35.add("");
+		answers.put(35, answer35);
+		
+		answer36.add("");
+		answer36.add("");
+		answer36.add("");
+		answer36.add("");
+		answer36.add("C");
+		answer36.add("");
+		answer36.add("");
+		answer36.add("");
+		answer36.add("");
+		answers.put(36, answer36);
+		
+		answer37.add("");
+		answer37.add("");
+		answer37.add("");
+		answer37.add("");
+		answer37.add("");
+		answer37.add("D");
+		answer37.add("");
+		answer37.add("");
+		answer37.add("");
+		answers.put(37, answer37);
+		
+		answer33.add("");
+		answer33.add("");
+		answer33.add("");
+		answer33.add("B");
+		answer33.add("");
+		answer33.add("D");
+		answer33.add("");
+		answer33.add("");
+		answer33.add("");
+		answers.put(38, answer33);
+		
+		answer39.add("");
+		answer39.add("");
+		answer39.add("");
+		answer39.add("B");
+		answer39.add("");
+		answer39.add("");
+		answer39.add("");
+		answer39.add("");
+		answer39.add("");
+		answers.put(39, answer39);
+		
+		answer40.add("");
+		answer40.add("");
+		answer40.add("A");
+		answer40.add("");
+		answer40.add("");
+		answer40.add("");
+		answer40.add("E");
+		answer40.add("F");
+		answer40.add("");
+		answers.put(40, answer40);
+		
+		answer41.add("");
+		answer41.add("");
+		answer41.add("");
+		answer41.add("");
+		answer41.add("");
+		answer41.add("");
+		answer41.add("");
+		answer41.add("F");
+		answer41.add("");
+		answers.put(41, answer41);
+		
+		answer42.add("");
+		answer42.add("");
+		answer42.add("A");
+		answer42.add("B");
+		answer42.add("");
+		answer42.add("");
+		answer42.add("");
+		answer42.add("");
+		answer42.add("");
+		answers.put(42, answer42);
+		
+		answer43.add("");
+		answer43.add("");
+		answer43.add("");
+		answer43.add("");
+		answer43.add("C");
+		answer43.add("");
+		answer43.add("");
+		answer43.add("");
+		answer43.add("");
+		answers.put(43, answer43);
+		
+		answer44.add("");
+		answer44.add("");
+		answer44.add("");
+		answer44.add("");
+		answer44.add("");
+		answer44.add("");
+		answer44.add("E");
+		answer44.add("");
+		answer44.add("");
+		answers.put(44, answer44);
+		
+		answer45.add("");
+		answer45.add("");
+		answer45.add("");
+		answer45.add("");
+		answer45.add("");
+		answer45.add("D");
+		answer45.add("");
+		answer45.add("");
+		answer45.add("");
+		answers.put(45, answer45);
+		
+		answer46.add("");
+		answer46.add("");
+		answer46.add("");
+		answer46.add("");
+		answer46.add("C");
+		answer46.add("");
+		answer46.add("");
+		answer46.add("");
+		answer46.add("");
+		answers.put(46, answer46);
+		
+		answer47.add("");
+		answer47.add("");
+		answer47.add("");
+		answer47.add("");
+		answer47.add("C");
+		answer47.add("");
+		answer47.add("");
+		answer47.add("");
+		answer47.add("");
+		answers.put(47, answer47);
+		
+		answer48.add("");
+		answer48.add("");
+		answer48.add("");
+		answer48.add("");
+		answer48.add("C");
+		answer48.add("");
+		answer48.add("");
+		answer48.add("");
+		answer48.add("");
+		answers.put(48, answer48);
+		
+		answer49.add("");
+		answer49.add("");
+		answer49.add("");
+		answer49.add("B");
+		answer49.add("");
+		answer49.add("");
+		answer49.add("");
+		answer49.add("");
+		answer49.add("");
+		answers.put(49, answer49);
+		
+		answer50.add("");
+		answer50.add("");
+		answer50.add("A");
+		answer50.add("");
+		answer50.add("");
+		answer50.add("");
+		answer50.add("");
+		answer50.add("");
+		answer50.add("");
+		answers.put(50, answer50);
+		
+		answer51.add("");
+		answer51.add("");
+		answer51.add("");
+		answer51.add("");
+		answer51.add("");
+		answer51.add("D");
+		answer51.add("");
+		answer51.add("");
+		answer51.add("");
+		answers.put(51, answer51);
+		
+		answer52.add("");
+		answer52.add("");
+		answer52.add("A");
+		answer52.add("");
+		answer52.add("");
+		answer52.add("");
+		answer52.add("");
+		answer52.add("");
+		answer52.add("");
+		answers.put(52, answer52);
+		
+		answer53.add("");
+		answer53.add("");
+		answer53.add("A");
+		answer53.add("");
+		answer53.add("");
+		answer53.add("");
+		answer53.add("");
+		answer53.add("");
+		answer53.add("");
+		answers.put(53, answer53);
+		
+		answer54.add("");
+		answer54.add("");
+		answer54.add("");
+		answer54.add("B");
+		answer54.add("");
+		answer54.add("");
+		answer54.add("");
+		answer54.add("");
+		answer54.add("");
+		answers.put(54, answer54);
+		
+		answer55.add("");
+		answer55.add("");
+		answer55.add("");
+		answer55.add("");
+		answer55.add("C");
+		answer55.add("D");
+		answer55.add("E");
+		answer55.add("");
+		answer55.add("");
+		answers.put(55, answer55);
+		
+		answer56.add("");
+		answer56.add("");
+		answer56.add("");
+		answer56.add("");
+		answer56.add("");
+		answer56.add("");
+		answer56.add("E");
+		answer56.add("");
+		answer56.add("");
+		answers.put(56, answer56);
+		
+		answer57.add("");
+		answer57.add("");
+		answer57.add("");
+		answer57.add("");
+		answer57.add("");
+		answer57.add("D");
+		answer57.add("");
+		answer57.add("");
+		answers.put(57, answer57);
+		
+		answer58.add("");
+		answer58.add("");
+		answer58.add("");
+		answer58.add("B");
+		answer58.add("");
+		answer58.add("");
+		answer58.add("");
+		answer58.add("");
+		answer58.add("");
+		answers.put(58, answer58);
+		
+		answer59.add("");
+		answer59.add("");
+		answer59.add("A");
+		answer59.add("");
+		answer59.add("");
+		answer59.add("");
+		answer59.add("");
+		answer59.add("");
+		answer59.add("");
+		answers.put(59, answer59);
+		
+		answer60.add("");
+		answer60.add("");
+		answer60.add("A");
+		answer60.add("");
+		answer60.add("");
+		answer60.add("");
+		answer60.add("");
+		answer60.add("");
+		answer60.add("");
+		answers.put(60, answer60);
+		
+		answer61.add("");
+		answer61.add("");
+		answer61.add("");
+		answer61.add("");
+		answer61.add("C");
+		answer61.add("");
+		answer61.add("");
+		answer61.add("");
+		answer61.add("");
+		answers.put(61, answer61);
+		
+		answer62.add("");
+		answer62.add("");
+		answer62.add("A");
+		answer62.add("B");
+		answer62.add("");
+		answer62.add("");
+		answer62.add("");
+		answer62.add("");
+		answer62.add("");
+		answers.put(62, answer62);
+		
+		answer63.add("");
+		answer63.add("");
+		answer63.add("");
+		answer63.add("B");
+		answer63.add("");
+		answer63.add("");
+		answer63.add("");
+		answer63.add("");
+		answer63.add("");
+		answers.put(63, answer63);
+		
+		answer64.add("");
+		answer64.add("");
+		answer64.add("");
+		answer64.add("B");
+		answer64.add("");
+		answer64.add("");
+		answer64.add("E");
+		answer64.add("");
+		answer64.add("");
+		answers.put(64, answer64);
+		
+		answer65.add("");
+		answer65.add("");
+		answer65.add("");
+		answer65.add("");
+		answer65.add("");
+		answer65.add("D");
+		answer65.add("");
+		answer65.add("");
+		answer65.add("");
+		answers.put(65, answer65);
+		
+		answer66.add("");
+		answer66.add("");
+		answer66.add("");
+		answer66.add("");
+		answer66.add("");
+		answer66.add("D");
+		answer66.add("");
+		answer66.add("");
+		answer66.add("");
+		answers.put(66, answer66);
+		
+		answer67.add("");
+		answer67.add("");
+		answer67.add("");
+		answer67.add("");
+		answer67.add("");
+		answer67.add("D");
+		answer67.add("");
+		answer67.add("");
+		answer67.add("");
+		answers.put(67, answer67);
+		
+		answer68.add("");
+		answer68.add("");
+		answer68.add("");
+		answer68.add("");
+		answer68.add("");
+		answer68.add("D");
+		answer68.add("");
+		answer68.add("");
+		answers.put(68, answer68);
+		
+		answer69.add("");
+		answer69.add("");
+		answer69.add("");
+		answer69.add("");
+		answer69.add("");
+		answer69.add("D");
+		answer69.add("");
+		answer69.add("");
+		answer69.add("");
+		answers.put(69, answer69);
+		
+		answer70.add("");
+		answer70.add("");
+		answer70.add("A");
+		answer70.add("B");
+		answer70.add("C");
+		answer70.add("");
+		answer70.add("");
+		answer70.add("");
+		answer70.add("");
+		answers.put(70, answer70);
+		
+		answer71.add("");
+		answer71.add("");
+		answer71.add("A");
+		answer71.add("");
+		answer71.add("");
+		answer71.add("");
+		answer71.add("");
+		answer71.add("");
+		answer71.add("");
+		answers.put(71, answer71);
+		
+		answer72.add("");
+		answer72.add("");
+		answer72.add("A");
+		answer72.add("");
+		answer72.add("");
+		answer72.add("");
+		answer72.add("");
+		answer72.add("");
+		answer72.add("");
+		answers.put(72, answer72);
+		
+		answer73.add("");
+		answer73.add("");
+		answer73.add("");
+		answer73.add("");
+		answer73.add("C");
+		answer73.add("");
+		answer73.add("");
+		answer73.add("");
+		answer73.add("");
+		answers.put(73, answer73);
+		
+		
+		answer74.add("");
+		answer74.add("");
+		answer74.add("");
+		answer74.add("B");
+		answer74.add("");
+		answer74.add("D");
+		answer74.add("");
+		answer74.add("");
+		answer74.add("");
+		answers.put(74, answer74);
+		
+		answer75.add("");
+		answer75.add("");
+		answer75.add("");
+		answer75.add("");
+		answer75.add("");
+		answer75.add("D");
+		answer75.add("");
+		answer75.add("");
+		answer75.add("");
+		answers.put(75, answer75);
+		
+		answer76.add("");
+		answer76.add("");
+		answer76.add("");
+		answer76.add("B");
+		answer76.add("");
+		answer76.add("");
+		answer76.add("");
+		answer76.add("");
+		answer76.add("");
+		answers.put(76, answer76);
+		
+		answer77.add("");
+		answer77.add("");
+		answer77.add("");
+		answer77.add("");
+		answer77.add("");
+		answer77.add("D");
+		answer77.add("E");
+		answer77.add("");
+		answer77.add("");
+		answers.put(77, answer77);
+		
+		answer = answers.get(Integer.valueOf(questionNumber));
+		return answer;
+		
+		
+		
+		
+		
+	}
 
 	@Override
 	public ArrayList<String> getQuestion(String questionNumber) {
@@ -1110,6 +2054,7 @@ public class TestServiceImpl implements TestService {
 		// TODO Auto-generated method stub
 		return success;
 	}
+	
 
 	@Override
 	public boolean verifyAnswer(int questionNumber, ArrayList<String> answersUser) {

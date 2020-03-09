@@ -38,17 +38,19 @@ public class TestController {
 
 
 		numQue = String.valueOf(testService.getTier());
-		
+		int porcentaje = (Integer.valueOf(numQue)* 100)/76;
 		
 
 		ModelAndView mav = new ModelAndView(ViewConstant.JAVA_FORM);
 		HashMap<String, String> imagen = new HashMap<String, String>();
 		
 		imagen.put("imagen", numQue + ".jpg");
+		imagen.put("valuenow", String.valueOf(porcentaje));
 		testService.setQuestionNow(Integer.valueOf(numQue));
 		testService.setImage(numQue);
 		mav.addObject("review", imagen);
 		mav.addObject("question", testService.getQuestion(numQue));
+		mav.addObject("response", testService.getValidAnswers(numQue));
 
 		testService.setTier(Integer.valueOf(numQue));
 		System.out.println("+++++++++++++++++++++++++++++++ numque " + numQue);
@@ -99,19 +101,5 @@ public class TestController {
 
 	}
 	
-	@GetMapping("/score")
-	public ModelAndView scoreFinal() {
-		ModelAndView mav = new ModelAndView(ViewConstant.SCORE_FINAL);
-		HashMap<String, String> scoreFinal = new HashMap<String, String>();
-		scoreFinal.put("score",String.valueOf( testService.calculateScore()));
-		mav.addObject("review", scoreFinal);
-		return mav;
-		
-	}
 	
-	@GetMapping("/getout")
-	public String getOut() {
-		
-		return "redirect:/test";	
-	}
 }

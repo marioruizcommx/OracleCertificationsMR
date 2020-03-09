@@ -7,6 +7,8 @@ import com.gym.oracleGym.model.TestModel;
 
 public interface TestService {
 	
+	public ArrayList<String> getValidAnswers(String questionNumber);
+	
 	public ArrayList<String> getQuestion(String questionNumber);
 	
 	public void setFails(int questionNumber);

@@ -81,60 +81,51 @@
 					     <div class="container">
 
 						
-						<div class="row checkbox" th:if="${not #lists.isEmpty(question[2])}" th:switch="${response[2]}">
-						    
-							<h3 class="text-success" th:case="'A'"><input type="checkbox" name="optionA" value="1" id="optionA" /> <label
-				                       for="optionA" th:text="${question[2]}">OptionA</label></h3>
-				                       
-				            <h3  th:case="''"><input type="checkbox" name="optionA" value="1" id="optionA" /> <label
-				                       for="optionA" th:text="${question[2]}">OptionA</label></h3>
-
-								</br>
-
-						</div>
 						
 
+						
+						
+						<div class="row checkbox" th:if="${not #lists.isEmpty(question[2])}">
+						    
+							<h3><input type="checkbox" name="optionA" value="1" id="optionA" th:if="${response[2] eq 'A'}"  /> <label
+				                       for="optionA"
+								th:text="${question[2]}">OptionA</label></h3>
+								
+								<input type="checkbox" name="optionA" value="1" id="optionA" th:unless="${response[2] eq 'A'}"/> <label
+				                       for="optionA"
+								th:text="${question[2]}">OptionA</label></h3>
+								
+								</br>
+								
+								<th:block th:if="${response[2] eq 'A'}" >Male</th:block>
+                                <th:block th:unless="${response[2] eq 'A'}">Female</th:block>
+						</div>
 
-						<div class="row checkbox" th:if="${not #lists.isEmpty(question[3])}" th:switch="${response[3]}">
-							<h3 class="text-success" th:case="'B'"><input type="checkbox" name="optionB" value="1" id="optionB" /> <label
-								 for="optionA"
-								th:text="${question[3]}">OptionB</label></h3>
-							<h3 th:case="''"><input type="checkbox" name="optionB" value="1" id="optionB" /> <label
+						<div class="row checkbox" th:if="${not #lists.isEmpty(question[3])}">
+							<h3><input type="checkbox" name="optionB" value="1" id="optionB" /> <label
 								 for="optionA"
 								th:text="${question[3]}">OptionB</label></h3></br>
 						</div>
 
-						<div class="row checkbox" th:if="${not #lists.isEmpty(question[4])}" th:switch="${response[4]}">
-							<h3 class="text-success" th:case="'C'"><input type="checkbox" name="optionC" value="1" id="optionC" /> <label
-								 for="optionA"
-								th:text="${question[4]}">OptionC</label></h3>
-							<h3 th:case="''"><input type="checkbox" name="optionC" value="1" id="optionC" /> <label
+						<div class="row checkbox" th:if="${not #lists.isEmpty(question[4])}">
+							<h3><input type="checkbox" name="optionC" value="1" id="optionC" /> <label
 								 for="optionA"
 								th:text="${question[4]}">OptionC</label></h3></br>
 						</div>
 
-						<div class="row checkbox" th:if="${not #lists.isEmpty(question[5])}" th:switch="${response[5]}">
-							<h3 class="text-success" th:case="'D'"><input type="checkbox" name="optionD" value="1" id="optionD" /> <label
-								 for="optionA"
-								th:text="${question[5]}">OptionD</label></h3>
-						    <h3 th:case="''"><input type="checkbox" name="optionD" value="1" id="optionD" /> <label
+						<div class="row checkbox" th:if="${not #lists.isEmpty(question[5])}">
+							<h3><input type="checkbox" name="optionD" value="1" id="optionD" /> <label
 								 for="optionA"
 								th:text="${question[5]}">OptionD</label></h3></br>
 						</div>
 
-						<div class="row checkbox" th:if="${not #lists.isEmpty(question[6])}" th:switch="${response[6]}">
-							<h3 class="text-success" th:case="'E'"><input type="checkbox" name="optionE" value="1" id="optionE" /> <label
-								 for="optionA"
-								th:text="${question[6]}">OptionE</label></h3>
-							<h3 th:case="''"><input type="checkbox" name="optionE" value="1" id="optionE" /> <label
+						<div class="row checkbox" th:if="${not #lists.isEmpty(question[6])}">
+							<h3><input type="checkbox" name="optionE" value="1" id="optionE" /> <label
 								 for="optionA"
 								th:text="${question[6]}">OptionE</label></h3></br>
 						</div>
-						<div class="row checkbox" th:if="${not #lists.isEmpty(question[7])}" th:switch="${response[7]}">
-							<h3 class="text-success" th:case="'F'"><input type="checkbox" name="optionF" value="1" id="optionF" /> <label
-								 for="optionA"
-								th:text="${question[7]}">OptionF</label></h3>
-						    <h3 th:case="''"><input type="checkbox" name="optionF" value="1" id="optionF" /> <label
+						<div class="row checkbox" th:if="${not #lists.isEmpty(question[7])}">
+							<h3><input type="checkbox" name="optionF" value="1" id="optionF" /> <label
 								 for="optionA"
 								th:text="${question[7]}">OptionF</label></h3></br>
 						</div>
