@@ -30,8 +30,8 @@ public class ScoreController {
 	
 	@GetMapping("/getout")
 	public String getOut() {
-		
-		return "redirect:/index";	
+		testService.resetTest();
+		return "redirect:/menu-secundary";	
 	}
 
 }

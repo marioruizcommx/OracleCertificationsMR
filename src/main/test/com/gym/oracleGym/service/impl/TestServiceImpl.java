@@ -25,6 +25,10 @@ public class TestServiceImpl implements TestService {
 	public int fail = 0;
 	public int succes = 1;
 	public int tier = 1;
+	public boolean typeTest;
+	
+	
+	
 	
 	@Override
 	public ArrayList<String> getValidAnswers(String questionNumber){
@@ -2019,30 +2023,30 @@ public class TestServiceImpl implements TestService {
 	}
 
 	@Override
-	public String getImage(String imagenNumber) {
+	public boolean getImage(String imagenNumber) {
 		ArrayList<Integer> nombreArrayList = new ArrayList<Integer>();
 		boolean existImage;
 
 		ImgModel img = new ImgModel();
 
-		/*
-		 * nombreArrayList.add(5); nombreArrayList.add(31); nombreArrayList.add(40);
-		 * nombreArrayList.add(43); nombreArrayList.add(63); nombreArrayList.add(67);
-		 * nombreArrayList.add(72); nombreArrayList.add(74);
-		 * 
-		 * existImage = nombreArrayList.contains(imagenNumber);
-		 * 
-		 * if (existImage) {
-		 * 
-		 * return 0;
-		 * 
-		 * } else {
-		 * 
-		 * return 1; }
-		 */
-		String imagen = img.getImgNumber();
+		
+		  nombreArrayList.add(5); nombreArrayList.add(31); nombreArrayList.add(40);
+		  nombreArrayList.add(43); nombreArrayList.add(63); nombreArrayList.add(67);
+		  nombreArrayList.add(72); nombreArrayList.add(74);
+		  
+		  existImage = nombreArrayList.contains(Integer.valueOf(imagenNumber));
+		  
+		  if (existImage == true) {
+		  
+		  return true;
+		  
+		  } else {
+		  
+		  return false; 
+		  
+		  }
+		 
 
-		return imagen;
 	}
 
 	@Override
@@ -2550,5 +2554,25 @@ public class TestServiceImpl implements TestService {
 		this.tier = tier + 1;
 
 	}
+	
+	@Override
+	public boolean getType() {
+		return typeTest;
+	}
+
+	@Override
+	public void setType(boolean typeTest) {
+		this.typeTest = typeTest;
+
+	}
+
+	@Override
+	public void resetTest() {
+		this.fail = 0;
+		this.succes = 1;
+		this.tier = 1;
+	}
+	
+	
 
 }

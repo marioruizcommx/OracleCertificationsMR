@@ -31,7 +31,7 @@
 
 <div class="container">
   <div class="row" >
-                            <a href="#" th:href="@{/login}">
+                            <a href="#" th:href="@{/test}">
 								<button type="button" class="btn btn btn-danger btn-lg" >Log In</button>
 						    </a>
 						    <a href="#" th:href="@{/test}">
@@ -54,15 +54,20 @@
 		<article class="container">
 		
 		<br><br><br>
-		<div>
-		<h1>Search your Exam GYM</h1>
-		<h2>Find by technology or by exam code</h2>
-		
-		 <form class="form-inline my-2 my-lg-0">
-	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-	    </form>
-		</div>
+ <form class="form-signin ">
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+    </form>
 		</article>
 		
 		

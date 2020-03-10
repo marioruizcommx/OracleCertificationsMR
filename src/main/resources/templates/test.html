@@ -19,155 +19,238 @@
 </head>
 
 <body>
-<div class="p-3 mb-2 bg-light text-dark">
+	<div class="p-3 mb-2 bg-light text-dark">
 
 
-	<header id="main-header">
+		<header id="main-header">
 
-		<!-- / nav -->
-		
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <h1 class=" ">GYM Certifications</h1>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+			<!-- / nav -->
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"><h4>Java</h4> <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><h4>PL/SQL</h4></a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#"><h4>Oracle DB</h4></a>
-      </li>
-    </ul>
-  </div>
-</nav>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+				<h1 class=" ">GYM Certifications</h1>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-	</header>
-	<!-- / #main-header -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
 
 
-	<section id="main-content">
+						<div th:switch="${global.variable}">
+							<li th:case="false"
+								class="nav-item p-3 mb-2 bg-warning text-dark">
+								<h1 id="countdown"></h1>
+							</li>
 
-		<article>
-            
-            
-
-			<div class="container card bg-light text-center w-50">
-				<form class="form-group" action="#" th:action="@{/test}"
-					th:object="${AnswersModel}" method="post">
-					<fieldset class="container">
-					    <br>
-						<div class="row text-left" th:if="${not #lists.isEmpty(question[0])}">
-							<h1 th:text="${question[0]}"></h1>
+							<li th:case="true"></li>
 						</div>
-						<div class="row text-left" th:if="${not #lists.isEmpty(question[1])}">
-							<h3 th:text="${question[1]}"></h3>
-						</div>
-						</br>
-					</fieldset>
-					
-					
+
+
+					</ul>
+				</div>
+
+			</nav>
+
+
+		</header>
+		<!-- / #main-header __${global.variable}__ -->
+
+
+		<section id="main-content">
+
+			<article>
+
+				<div class="container card bg-light text-center w-50">
+					<form class="form-group" action="#"
+						th:action="@{/test?typeTest=__${global.variable}__}"
+						th:object="${AnswersModel}" method="post">
 						
-					<fieldset class="container">
-					    <div class="container">
-					    <div class="row " th:if="${not #lists.isEmpty(question[1])}">
-							<img th:src="@{/imgs/java/808/{image}(image=${review.imagen})}">
-						</div>
-					     <div class="container">
-
+						<fieldset class="container">
+							<br>
+							<div class="row text-left"
+								th:if="${not #lists.isEmpty(question[0])}">
+								<h1 th:text="${question[0]}"></h1>
+							</div>
+							<div class="row text-left"
+								th:if="${not #lists.isEmpty(question[1])}">
+								<h3 th:text="${question[1]}"></h3>
+							</div>
+							</br>
+						</fieldset>
 						
-						<div class="row checkbox" th:if="${not #lists.isEmpty(question[2])}" th:switch="${response[2]}">
-						    
-							<h3 class="text-success" th:case="'A'"><input type="checkbox" name="optionA" value="1" id="optionA" /> <label
-				                       for="optionA" th:text="${question[2]}">OptionA</label></h3>
-				                       
-				            <h3  th:case="''"><input type="checkbox" name="optionA" value="1" id="optionA" /> <label
-				                       for="optionA" th:text="${question[2]}">OptionA</label></h3>
-
-								</br>
-
-						</div>
 						
 
 
-						<div class="row checkbox" th:if="${not #lists.isEmpty(question[3])}" th:switch="${response[3]}">
-							<h3 class="text-success" th:case="'B'"><input type="checkbox" name="optionB" value="1" id="optionB" /> <label
-								 for="optionA"
-								th:text="${question[3]}">OptionB</label></h3>
-							<h3 th:case="''"><input type="checkbox" name="optionB" value="1" id="optionB" /> <label
-								 for="optionA"
-								th:text="${question[3]}">OptionB</label></h3></br>
-						</div>
-
-						<div class="row checkbox" th:if="${not #lists.isEmpty(question[4])}" th:switch="${response[4]}">
-							<h3 class="text-success" th:case="'C'"><input type="checkbox" name="optionC" value="1" id="optionC" /> <label
-								 for="optionA"
-								th:text="${question[4]}">OptionC</label></h3>
-							<h3 th:case="''"><input type="checkbox" name="optionC" value="1" id="optionC" /> <label
-								 for="optionA"
-								th:text="${question[4]}">OptionC</label></h3></br>
-						</div>
-
-						<div class="row checkbox" th:if="${not #lists.isEmpty(question[5])}" th:switch="${response[5]}">
-							<h3 class="text-success" th:case="'D'"><input type="checkbox" name="optionD" value="1" id="optionD" /> <label
-								 for="optionA"
-								th:text="${question[5]}">OptionD</label></h3>
-						    <h3 th:case="''"><input type="checkbox" name="optionD" value="1" id="optionD" /> <label
-								 for="optionA"
-								th:text="${question[5]}">OptionD</label></h3></br>
-						</div>
-
-						<div class="row checkbox" th:if="${not #lists.isEmpty(question[6])}" th:switch="${response[6]}">
-							<h3 class="text-success" th:case="'E'"><input type="checkbox" name="optionE" value="1" id="optionE" /> <label
-								 for="optionA"
-								th:text="${question[6]}">OptionE</label></h3>
-							<h3 th:case="''"><input type="checkbox" name="optionE" value="1" id="optionE" /> <label
-								 for="optionA"
-								th:text="${question[6]}">OptionE</label></h3></br>
-						</div>
-						<div class="row checkbox" th:if="${not #lists.isEmpty(question[7])}" th:switch="${response[7]}">
-							<h3 class="text-success" th:case="'F'"><input type="checkbox" name="optionF" value="1" id="optionF" /> <label
-								 for="optionA"
-								th:text="${question[7]}">OptionF</label></h3>
-						    <h3 th:case="''"><input type="checkbox" name="optionF" value="1" id="optionF" /> <label
-								 for="optionA"
-								th:text="${question[7]}">OptionF</label></h3></br>
-						</div>
-					</div>
-						</div>
+						<fieldset class="container">
+							<div class="container">
+							
+								<div class="row " th:if="${not #lists.isEmpty(question[1])}">
+								    <div th:if="${not #lists.isEmpty(review.imagen)}">
+										<img th:src="@{/imgs/java/808/{image}(image=${review.imagen})}">
+									</div>
+								</div>
+								
+								
+								
+								<div class="container">
 
 
-						<button type="submit" class="btn btn-primary btn-lg">Next Question</button>
-						
-                        
-					</fieldset>
-				</form>
-				<form class="form-group" action="#" th:action="@{/score}">
+									<div class="row checkbox"
+										th:if="${not #lists.isEmpty(question[2])}"
+										th:switch="${response[2]}">
+
+										<h3 class="text-success" th:case="'A'">
+											<input type="checkbox" name="optionA" value="1" id="optionA" />
+											<label for="optionA" th:text="${question[2]}">OptionA</label>
+										</h3>
+
+										<h3 th:case="''">
+											<input type="checkbox" name="optionA" value="1" id="optionA" />
+											<label for="optionA" th:text="${question[2]}">OptionA</label>
+										</h3>
+
+										</br>
+
+									</div>
+
+
+
+									<div class="row checkbox"
+										th:if="${not #lists.isEmpty(question[3])}"
+										th:switch="${response[3]}">
+										<h3 class="text-success" th:case="'B'">
+											<input type="checkbox" name="optionB" value="1" id="optionB" />
+											<label for="optionA" th:text="${question[3]}">OptionB</label>
+										</h3>
+										<h3 th:case="''">
+											<input type="checkbox" name="optionB" value="1" id="optionB" />
+											<label for="optionA" th:text="${question[3]}">OptionB</label>
+										</h3>
+										</br>
+									</div>
+
+									<div class="row checkbox"
+										th:if="${not #lists.isEmpty(question[4])}"
+										th:switch="${response[4]}">
+										<h3 class="text-success" th:case="'C'">
+											<input type="checkbox" name="optionC" value="1" id="optionC" />
+											<label for="optionA" th:text="${question[4]}">OptionC</label>
+										</h3>
+										<h3 th:case="''">
+											<input type="checkbox" name="optionC" value="1" id="optionC" />
+											<label for="optionA" th:text="${question[4]}">OptionC</label>
+										</h3>
+										</br>
+									</div>
+
+									<div class="row checkbox"
+										th:if="${not #lists.isEmpty(question[5])}"
+										th:switch="${response[5]}">
+										<h3 class="text-success" th:case="'D'">
+											<input type="checkbox" name="optionD" value="1" id="optionD" />
+											<label for="optionA" th:text="${question[5]}">OptionD</label>
+										</h3>
+										<h3 th:case="''">
+											<input type="checkbox" name="optionD" value="1" id="optionD" />
+											<label for="optionA" th:text="${question[5]}">OptionD</label>
+										</h3>
+										</br>
+									</div>
+
+									<div class="row checkbox"
+										th:if="${not #lists.isEmpty(question[6])}"
+										th:switch="${response[6]}">
+										<h3 class="text-success" th:case="'E'">
+											<input type="checkbox" name="optionE" value="1" id="optionE" />
+											<label for="optionA" th:text="${question[6]}">OptionE</label>
+										</h3>
+										<h3 th:case="''">
+											<input type="checkbox" name="optionE" value="1" id="optionE" />
+											<label for="optionA" th:text="${question[6]}">OptionE</label>
+										</h3>
+										</br>
+									</div>
+									<div class="row checkbox"
+										th:if="${not #lists.isEmpty(question[7])}"
+										th:switch="${response[7]}">
+										<h3 class="text-success" th:case="'F'">
+											<input type="checkbox" name="optionF" value="1" id="optionF" />
+											<label for="optionA" th:text="${question[7]}">OptionF</label>
+										</h3>
+										<h3 th:case="''">
+											<input type="checkbox" name="optionF" value="1" id="optionF" />
+											<label for="optionA" th:text="${question[7]}">OptionF</label>
+										</h3>
+										</br>
+									</div>
+								</div>
+							</div>
+
+
+							<button type="submit" class="btn btn-primary btn-lg">Next
+								Question</button>
+
+
+						</fieldset>
+					</form>
+					<form class="form-group" action="#" th:action="@{/score}">
 						<p>
-							<button type="submit" class="btn btn-warning btn-lg">To Abort</button>
+							<button type="submit" class="btn btn-danger btn-lg">To
+								Abort</button>
 						</p>
-						</form>
-			</div>
+					</form>
+				</div>
 
-		</article>
-		<!-- / article -->
+			</article>
+			<!-- / article -->
 
-	</section>
-	<!-- / #main-content -->
-   <br>
+		</section>
+		<!-- / #main-content -->
+		<br>
 
-  <div class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="${review.valuenow}" aria-valuemin="0" aria-valuemax="100" th:style="'width:' + ${review.valuenow} + '%'"></div>
-</div>
-  
-  
-</div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-striped progress-bar-animated"
+				role="progressbar" aria-valuenow="${review.valuenow}"
+				aria-valuemin="0" aria-valuemax="100"
+				th:style="'width:' + ${review.valuenow} + '%'"></div>
+		</div>
+
+		>
+
+
+	</div>
 	<!-- / #main-footer -->
+	<script>
+      function countdownTimer() {
+        const difference = +new Date("2021-03-01") - +new Date();
+        let remaining = "Time's up!";
+
+        if (difference > 0) {
+          const parts = {
+            days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+            hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+            minutes: Math.floor((difference / 1000 / 60) % 60),
+            seconds: Math.floor((difference / 1000) % 60)
+          };
+
+          remaining = Object.keys(parts)
+            .map(part => {
+              if (!parts[part]) return;
+              return `${parts[part]} ${part}`;
+            })
+            .join(" ");
+        }
+
+        document.getElementById("countdown").innerHTML = remaining;
+      }
+
+      countdownTimer();
+      setInterval(countdownTimer, 1000);
+    </script>
+
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
 		crossorigin="anonymous"></script>
@@ -179,7 +262,6 @@
 		src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 		crossorigin="anonymous"></script>
-		<div class="progress">
-
+	<div class="progress">
 </body>
 </html>

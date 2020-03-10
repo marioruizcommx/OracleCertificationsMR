@@ -7,6 +7,8 @@ import com.gym.oracleGym.model.TestModel;
 
 public interface TestService {
 	
+	public void resetTest();
+	
 	public ArrayList<String> getValidAnswers(String questionNumber);
 	
 	public ArrayList<String> getQuestion(String questionNumber);
@@ -25,7 +27,7 @@ public interface TestService {
 	
 	public int calculateScore();
 	
-	public String getImage(String imagenNumber);
+	public boolean getImage(String imagenNumber);
 	
 	public ArrayList<Integer> failQuestionList();
 	
@@ -38,6 +40,10 @@ public interface TestService {
 	public int getTier();
 	
 	public void setTier(int tier);
+	
+	public boolean getType();
+
+	public void setType(boolean typeTest);
 	
 	
 

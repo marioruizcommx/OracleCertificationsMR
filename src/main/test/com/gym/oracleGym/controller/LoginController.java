@@ -7,13 +7,14 @@ import org.springframework.web.servlet.ModelAndView;
 import com.gym.oracleGym.constant.ViewConstant;
 
 @Controller
-public class IndexController {
+public class LoginController {
 	
-	@GetMapping("/index")
-	public ModelAndView getIndex() {
-		ModelAndView mav = new ModelAndView();
+	@GetMapping("/login")
+	public ModelAndView getLogin() {
+		ModelAndView mav = new ModelAndView(ViewConstant.LOGIN);
 		return mav;
 		
 	}
+	
 
 }

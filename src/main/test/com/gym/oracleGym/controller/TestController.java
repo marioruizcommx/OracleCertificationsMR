@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
@@ -34,24 +35,55 @@ public class TestController {
 	private TestService testService;
 
 	@GetMapping("/test")
-	public ModelAndView showTest(Model model) {
-
+	public ModelAndView showTest(@RequestParam(name = "typeTest", required= false) boolean typeTest, 
+			                     @RequestParam(name = "resetTest", required= false) boolean resetTest, Model model) {
 
 		numQue = String.valueOf(testService.getTier());
 		int porcentaje = (Integer.valueOf(numQue)* 100)/77;
-		
+		boolean typeTestLocal; 
 
 		ModelAndView mav = new ModelAndView(ViewConstant.JAVA_FORM);
+		ArrayList<String> unAnswers = new ArrayList<String>();
 		HashMap<String, String> imagen = new HashMap<String, String>();
+		HashMap<String, Boolean> globalVar = new HashMap<String, Boolean>();
 		
-		imagen.put("imagen", numQue + ".jpg");
+		if(resetTest==true) {
+			testService.resetTest();
+		}
+		
+        if(typeTest==false) {
+        	
+        	unAnswers.add("");
+        	unAnswers.add("");
+        	unAnswers.add("");
+        	unAnswers.add("");
+        	unAnswers.add("");
+        	unAnswers.add("");
+        	unAnswers.add("");
+        	unAnswers.add("");
+        	unAnswers.add("");
+        	
+		}else {
+			
+			unAnswers = testService.getValidAnswers(numQue);
+		}
+        globalVar.put("variable", typeTest);
+        
+        if(testService.getImage(numQue)==true) {
+        	imagen.put("imagen", "");
+        }else {
+        	
+        	imagen.put("imagen", numQue + ".jpg");
+        }
+        
+		
 		imagen.put("valuenow", String.valueOf(porcentaje));
 		testService.setQuestionNow(Integer.valueOf(numQue));
 		testService.setImage(numQue);
 		mav.addObject("review", imagen);
 		mav.addObject("question", testService.getQuestion(numQue));
-		mav.addObject("response", testService.getValidAnswers(numQue));
-
+		mav.addObject("response", unAnswers);
+		mav.addObject("global", globalVar);
 		testService.setTier(Integer.valueOf(numQue));
 		System.out.println("+++++++++++++++++++++++++++++++ numque " + numQue);
 		
@@ -62,7 +94,7 @@ public class TestController {
 
 
 	@PostMapping("/test")
-	public String workAnswer(@ModelAttribute(name = "answersU") AnswersModel answersModel, Model model) {
+	public String workAnswer(@RequestParam(name = "typeTest", required= false) boolean typeTest, @ModelAttribute(name = "answersU") AnswersModel answersModel, Model model) {
 
 		LOG.info("Metodo: que viene de respuestas: " + answersModel.toString());
 		ArrayList<String> ansU = new ArrayList<String>();
@@ -97,7 +129,7 @@ public class TestController {
 	        return "redirect:/score";
 		}
 		
-		return "redirect:/test";
+		return "redirect:/test?typeTest="+typeTest;
 
 	}
 	
