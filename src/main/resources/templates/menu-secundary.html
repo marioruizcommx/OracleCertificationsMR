@@ -15,22 +15,16 @@
 
 </head>
 
-<body>
-<div class="p-3 mb-2 bg-light text-dark">
+<body class="bg-light">
 
-
-		<header id="main-header">
-
-		<!-- / nav -->
-		
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <h1 class=" ">GYM Certifications</h1>
-
-
-
-</nav>
-
-	</header>
+ <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+      <h5 class="my-0 mr-md-auto font-weight-normal">GYM Certifications</h5>
+      	<a class="p-2 text-dark" th:href="@{/menu-principal}">All Products</a>
+      	<a class="p-2 text-dark" href="#">Profile</a>
+	   <a href="#" th:href="@{/index}">
+								<button type="button" class="btn btn-secondary btn-lg">  Sign out</button>
+	   </a>
+    </div>
 	<!-- / #main-header -->
 	<!-- / #main-header -->
 
@@ -42,9 +36,7 @@
 		<article>
 			<div class="container card bg-light text-center w-70">
 			
-			<a href="#" th:href="@{/test?typeTest=true}">
-								<button type="button" class="btn btn-primary btn-lg">ALL PRODUCTS</button>
-							</a>
+		
 							
 							
 			<table class="table">
@@ -61,10 +53,10 @@
 						<td > <h2>1z0-808</h2></td>
 						<td>
 						    <a href="#" th:href="@{/test?typeTest=false&resetTest=true}">
-								<button type="button" class="btn btn btn-primary btn-lg">Simulation</button>
+								<button type="button" class="btn btn-dark btn-lg">Simulation</button>
 						    </a>
 						    <a href="#" th:href="@{/test?typeTest=true}">
-								<button type="button" class="btn btn-success btn-lg">Learn</button>
+								<button type="button" class="btn btn-outline-dark btn-lg">Learn</button>
 							</a>
 						</td>
 					</tr>
