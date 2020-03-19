@@ -28,25 +28,30 @@
 
 	<section id="main-content">
 
-		<article class="container">
-		
-		<br><br><br>
-<form class="form-signin">
-      <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-      <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-      </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
-    </form>
-		</article>
+		<div class="container">
+
+		<form class="form-signin" th:action="@{logincheck}" method="POST">
+			<input type="hidden" name="${_csrf.parameterName}"
+				vale="${_csrf.token}" />
+			<h2 class="form-signin-heading">Sign in!!!</h2>
+			<label for="inputEmail" class="sr-only">Username</label> <input
+				type="text" class="form-control" placeholder="Username"
+				name="username" id="username" /> <label for="inputPassword"
+				class="sr-only">Password</label> <input type="password"
+				class="form-control" placeholder="Password" name="password"
+				id="password" />
+			<div th:if="${error != null}" class="aler alert-danger" role="alert">
+				Invalid username or password</div>
+			<div th:if="${logout != null}" class="aler alert-info" role="alert">
+				Logout successfully</div>
+
+			<button class="btn btn-lg btn-primary btn-block" type="submit">
+				<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+				Sign in
+			</button>
+		</form>
+
+	</div>
 		
 		
 		<!-- / article -->

@@ -2,6 +2,7 @@ package com.gym.oracleGym.controller;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.aspectj.weaver.patterns.TypePatternQuestions.Question;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -17,11 +18,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map.Entry;
 import java.util.Random;
+import java.util.function.Consumer;
 
+import com.gym.oracleGym.component.QuestionsConverter;
 import com.gym.oracleGym.constant.ViewConstant;
+import com.gym.oracleGym.entity.Questions;
 import com.gym.oracleGym.model.AnswersModel;
 import com.gym.oracleGym.model.ImgModel;
+import com.gym.oracleGym.model.QuestionModel;
 import com.gym.oracleGym.model.TestModel;
+import com.gym.oracleGym.repository.QuestionsRepository;
+import com.gym.oracleGym.service.QuestionsService;
 import com.gym.oracleGym.service.TestService;
 
 @Controller
@@ -34,6 +41,7 @@ public class TestController {
 	@Qualifier("TestServiceImpl")
 	private TestService testService;
 
+	
 	@GetMapping("/test")
 	public ModelAndView showTest(@RequestParam(name = "typeTest", required= false) boolean typeTest, 
 			                     @RequestParam(name = "resetTest", required= false) boolean resetTest, Model model) {
@@ -41,6 +49,9 @@ public class TestController {
 		numQue = String.valueOf(testService.getTier());
 		int porcentaje = (Integer.valueOf(numQue)* 100)/77;
 		boolean typeTestLocal; 
+		
+
+
 
 		ModelAndView mav = new ModelAndView(ViewConstant.JAVA_FORM);
 		ArrayList<String> unAnswers = new ArrayList<String>();
@@ -82,6 +93,7 @@ public class TestController {
 		testService.setImage(numQue);
 		mav.addObject("review", imagen);
 		mav.addObject("question", testService.getQuestion(numQue));
+		//mav.addObject("question", que);
 		mav.addObject("response", unAnswers);
 		mav.addObject("global", globalVar);
 		testService.setTier(Integer.valueOf(numQue));

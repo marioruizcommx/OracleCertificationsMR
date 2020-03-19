@@ -2,13 +2,13 @@ server:
      port: 8090
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/spring
+    url: jdbc:mysql://localhost:3306/spring?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password: root
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: 
       naming:
         implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
     properties:
